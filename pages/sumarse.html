@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumarse - Young Devs</title>
+    <meta name="description" content="Únete a Young Devs como voluntario. Comparte tu conocimiento y transforma vidas.">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar transparent" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><span>Young Devs</span></a>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="mision.html" class="nav-link">Nuestra Misión</a></li>
+                <li class="dropdown">
+                    <a href="ayuda-general.html" class="nav-link">Te Ayudamos</a>
+                    <div class="dropdown-content">
+                        <a href="ayuda-matematicas.html">Matemáticas</a>
+                        <a href="ayuda-robotica.html">Robótica</a>
+                        <a href="ayuda-ingles.html">Inglés</a>
+                        <a href="ayuda-programacion.html">Programación</a>
+                        <a href="ayuda-negocios.html">Para Negocios</a>
+                    </div>
+                </li>
+                <li><a href="sumarse.html" class="nav-link active">Sumarse</a></li>
+                <li><a href="aliados.html" class="nav-link">Aliados</a></li>
+                <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="../assets/videos/young-devs-hero.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="hero-content" style="text-align: center; max-width: 900px; margin: 0 auto;">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">
+                Únete al Movimiento
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" style="margin: 0 auto 3rem;">
+                Sé parte del cambio. Comparte tu conocimiento, transforma vidas y construye un futuro mejor para la juventud.
+            </p>
+            <a href="#requisitos" class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                Quiero Ser Voluntario
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+            </a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUÉ SUMARSE -->
+    <section class="por-que-sumarse" style="padding: 6rem 0; background: var(--color-bg-primary);">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">¿Por Qué Ser Voluntario?</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Ser parte de Young Devs va más allá de enseñar. Es una oportunidad de crecimiento mutuo.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-top: 4rem;">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-md); text-align: center; transition: transform 0.3s ease;">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Impacto Real</h3>
+                    <p style="color: var(--color-text-secondary); line-height: 1.7;">Transforma vidas directamente. Cada clase que impartes, cada duda que resuelves, es un paso hacia un futuro mejor para alguien.</p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-md); text-align: center; transition: transform 0.3s ease;">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Networking</h3>
+                    <p style="color: var(--color-text-secondary); line-height: 1.7;">Conecta con otros profesionales apasionados. Construye una red de contactos valiosa mientras haces la diferencia.</p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-md); text-align: center; transition: transform 0.3s ease;">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Desarrollo Personal</h3>
+                    <p style="color: var(--color-text-secondary); line-height: 1.7;">Mejora tus habilidades de comunicación, liderazgo y enseñanza. Enseñar es la mejor forma de aprender.</p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-md); text-align: center; transition: transform 0.3s ease;">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Flexibilidad Total</h3>
+                    <p style="color: var(--color-text-secondary); line-height: 1.7;">Tú decides cuándo y cuánto tiempo quieres dedicar. Adaptamos el voluntariado a tu disponibilidad.</p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-md); text-align: center; transition: transform 0.3s ease;">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-azul-profundo); margin-bottom: 1.rem;">Satisfacción Personal</h3>
+                    <p style="color: var(--color-text-secondary); line-height: 1.7;">La gratitud de los estudiantes y ver su progreso es una recompensa invaluable que llena el alma.</p>
+                </div>
+
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300" style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-md); text-align: center; transition: transform 0.3s ease;">
+                    <div style="width: 80px; height: 80px; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Certificación</h3>
+                    <p style="color: var(--color-text-secondary); line-height: 1.7;">Recibe certificados de voluntariado que enriquecen tu CV y demuestran tu compromiso social.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUISITOS -->
+    <section class="requisitos" id="requisitos" style="padding: 6rem 0; background: var(--gradient-primary);">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">¿Qué Necesitas Para Sumarte?</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                No necesitas ser un experto. Solo pasión por enseñar y ganas de ayudar.
+            </p>
+            
+            <div style="max-width: 900px; margin: 3rem auto 0;">
+                <div class="requisito-item" data-aos="fade-right" data-aos-delay="100" style="background: white; padding: 2rem; border-radius: 16px; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1.5rem; box-shadow: var(--shadow-md);">
+                    <div style="width: 60px; height: 60px; background: var(--color-verde-esmeralda); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-weight: 700; font-size: 1.5rem;">1</div>
+                    <div>
+                        <h3 style="color: var(--color-azul-profundo); font-size: 1.3rem; margin-bottom: 0.5rem;">Conocimiento en al menos un área</h3>
+                        <p style="color: var(--color-text-secondary);">Matemáticas, programación, inglés, robótica o negocios. No necesitas ser un experto, solo tener conocimientos sólidos que compartir.</p>
+                    </div>
+                </div>
+
+                <div class="requisito-item" data-aos="fade-right" data-aos-delay="200" style="background: white; padding: 2rem; border-radius: 16px; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1.5rem; box-shadow: var(--shadow-md);">
+                    <div style="width: 60px; height: 60px; background: var(--color-verde-esmeralda); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-weight: 700; font-size: 1.5rem;">2</div>
+                    <div>
+                        <h3 style="color: var(--color-azul-profundo); font-size: 1.3rem; margin-bottom: 0.5rem;">Pasión por enseñar</h3>
+                        <p style="color: var(--color-text-secondary);">Lo más importante es tu actitud y ganas de compartir. La paciencia y empatía son clave para ser un buen mentor.</p>
+                    </div>
+                </div>
+
+                <div class="requisito-item" data-aos="fade-right" data-aos-delay="300" style="background: white; padding: 2rem; border-radius: 16px; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1.5rem; box-shadow: var(--shadow-md);">
+                    <div style="width: 60px; height: 60px; background: var(--color-verde-esmeralda); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-weight: 700; font-size: 1.5rem;">3</div>
+                    <div>
+                        <h3 style="color: var(--color-azul-profundo); font-size: 1.3rem; margin-bottom: 0.5rem;">Disponibilidad de tiempo</h3>
+                        <p style="color: var(--color-text-secondary);">Con 2-4 horas a la semana es suficiente. Tú decides tu horario y frecuencia de participación.</p>
+                    </div>
+                </div>
+
+                <div class="requisito-item" data-aos="fade-right" data-aos-delay="400" style="background: white; padding: 2rem; border-radius: 16px; display: flex; align-items: center; gap: 1.5rem; box-shadow: var(--shadow-md);">
+                    <div style="width: 60px; height: 60px; background: var(--color-verde-esmeralda); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: white; font-weight: 700; font-size: 1.5rem;">4</div>
+                    <div>
+                        <h3 style="color: var(--color-azul-profundo); font-size: 1.3rem; margin-bottom: 0.5rem;">Compromiso con la misión</h3>
+                        <p style="color: var(--color-text-secondary);">Creer en la educación gratuita y de calidad como motor de cambio social. Si necesitas capacitación, te la proporcionamos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="formulario-voluntario" style="padding: 6rem 0; background: var(--color-bg-primary);">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="section-title centered" data-aos="fade-up">Formulario de Voluntariado</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Completa el formulario y nos pondremos en contacto contigo para iniciar el proceso
+            </p>
+            
+            <form class="contacto-form" id="volunteerForm" data-aos="fade-up" data-aos-delay="200" style="background: white; padding: 3rem; border-radius: 24px; box-shadow: var(--shadow-lg); margin-top: 3rem;">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono (Opcional)</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                
+                <div class="form-group">
+                    <label for="edad">Edad *</label>
+                    <input type="number" id="edad" name="edad" min="15" max="100" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="area">¿En qué área quieres ayudar? *</label>
+                    <select id="area" name="area" required style="width: 100%; padding: var(--spacing-sm); border: 2px solid #E5E7EB; border-radius: var(--radius-sm); font-family: inherit; font-size: 1rem;">
+                        <option value="">Selecciona un área</option>
+                        <option value="Matemáticas">Matemáticas</option>
+                        <option value="Robótica">Robótica</option>
+                        <option value="Inglés">Inglés</option>
+                        <option value="Programación">Programación</option>
+                        <option value="Para Negocios">Para Negocios</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experiencia">¿Tienes experiencia enseñando o como mentor? *</label>
+                    <select id="experiencia" name="experiencia" required style="width: 100%; padding: var(--spacing-sm); border: 2px solid #E5E7EB; border-radius: var(--radius-sm); font-family: inherit; font-size: 1rem;">
+                        <option value="">Selecciona una opción</option>
+                        <option value="Sí, tengo experiencia">Sí, tengo experiencia</option>
+                        <option value="No, pero estoy dispuesto a aprender">No, pero estoy dispuesto a aprender</option>
+                        <option value="Poca experiencia">Tengo poca experiencia</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Cuéntanos un poco sobre ti y por qué quieres ser voluntario *</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Ejemplo: Soy estudiante de ingeniería y me apasiona enseñar programación..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">
+                    Enviar Solicitud
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+                
+                <div class="form-status" id="formStatus"></div>
+            </form>
+            
+            <!-- Contacto alternativo -->
+            <div class="contacto-alternativo" data-aos="fade-up" data-aos-delay="300" style="margin-top: 3rem; text-align: center;">
+                <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem; font-size: 1.1rem;">
+                    O también puedes contactarnos por:
+                </p>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <a href="https://instagram.com/youngdevs" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: var(--gradient-card); border-radius: 12px; transition: transform 0.3s ease;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span style="font-weight: 600; color: var(--color-azul-profundo);">Instagram</span>
+                    </a>
+                    
+                    <a href="https://wa.me/52XXXXXXXXXX" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: var(--gradient-card); border-radius: 12px; transition: transform 0.3s ease;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <span style="font-weight: 600; color: var(--color-azul-profundo);">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Young Devs Logo">
+                        <span>Young Devs</span>
+                    </div>
+                    <p class="footer-description">Talento joven impulsando el futuro. Educación gratuita de calidad para todos.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="mision.html">Nuestra Misión</a></li>
+                        <li><a href="ayuda-general.html">Te Ayudamos</a></li>
+                        <li><a href="sumarse.html">Sumarse</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Áreas de Apoyo</h4>
+                    <ul class="footer-links">
+                        <li><a href="ayuda-matematicas.html">Matemáticas</a></li>
+                        <li><a href="ayuda-robotica.html">Robótica</a></li>
+                        <li><a href="ayuda-ingles.html">Inglés</a></li>
+                        <li><a href="ayuda-programacion.html">Programación</a></li>
+                        <li><a href="ayuda-negocios.html">Para Negocios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <li><a href="aliados.html">Nuestros Aliados</a></li>
+                        <li><a href="mailto:young.devs@gmail.com">young.devs@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Young Devs. Todos los derechos reservados.</p>
+                <p>Potencia tu futuro y ayuda a impulsar el futuro de la juventud</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/form-handler.js"></script>
+
+    <style>
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .contacto-alternativo a:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda en Matemáticas - Young Devs</title>
+    <meta name="description" content="Recibe ayuda gratuita en matemáticas. Desde álgebra básica hasta cálculo avanzado.">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar transparent" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><span>Young Devs</span></a>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="mision.html" class="nav-link">Nuestra Misión</a></li>
+                <li class="dropdown">
+                    <a href="ayuda-general.html" class="nav-link active">Te Ayudamos</a>
+                    <div class="dropdown-content">
+                        <a href="ayuda-matematicas.html">Matemáticas</a>
+                        <a href="ayuda-robotica.html">Robótica</a>
+                        <a href="ayuda-ingles.html">Inglés</a>
+                        <a href="ayuda-programacion.html">Programación</a>
+                        <a href="ayuda-negocios.html">Para Negocios</a>
+                    </div>
+                </li>
+                <li><a href="sumarse.html" class="nav-link">Sumarse</a></li>
+                <li><a href="aliados.html" class="nav-link">Aliados</a></li>
+                <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION CON ANIMACIÓN -->
+    <section class="hero-area" style="height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+        <!-- Animación de fondo matemática -->
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="../assets/videos/young-devs-mate.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="hero-content" style="position: relative; z-index: 2; text-align: center; max-width: 900px; padding: 0 2rem;">
+            <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; backdrop-filter: blur(10px);" data-aos="zoom-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000" style="margin-bottom: 1.5rem;">
+                Matemáticas
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" style="margin: 0 auto 3rem;">
+                Hacemos las matemáticas comprensibles, accesibles y hasta divertidas. Nuestros mentores te ayudarán a dominar desde lo básico hasta lo más avanzado.
+            </p>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO LO HACEMOS -->
+    <section class="como-ayudamos" style="padding: 6rem 0; background: var(--color-bg-primary);">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">¿Cómo Te Vamos a Ayudar?</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 4rem;">
+                <div class="help-image" data-aos="fade-right" style="position: relative;">
+                    <img src="../assets/images/areas/matematicas-help.jpg" alt="Ayuda en Matemáticas" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg);">
+                    <div style="position: absolute; top: -20px; right: -20px; width: 100%; height: 100%; border: 3px solid var(--color-verde-esmeralda); border-radius: 24px; z-index: -1;"></div>
+                </div>
+                
+                <div class="help-content" data-aos="fade-left">
+                    <div class="help-item" style="margin-bottom: 2.5rem;">
+                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 60px; height: 60px; background: var(--gradient-card); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <span style="font-size: 1.5rem; font-weight: 700; color: var(--color-verde-esmeralda);">1</span>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 0.5rem;">Evaluación Inicial</h3>
+                                <p style="color: var(--color-text-secondary); line-height: 1.6;">Identificamos tu nivel actual y las áreas que necesitas reforzar para crear un plan personalizado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="help-item" style="margin-bottom: 2.5rem;">
+                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 60px; height: 60px; background: var(--gradient-card); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <span style="font-size: 1.5rem; font-weight: 700; color: var(--color-verde-esmeralda);">2</span>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 0.5rem;">Sesiones Personalizadas</h3>
+                                <p style="color: var(--color-text-secondary); line-height: 1.6;">Clases uno a uno o en grupos pequeños, adaptadas a tu ritmo y estilo de aprendizaje.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="help-item" style="margin-bottom: 2.5rem;">
+                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 60px; height: 60px; background: var(--gradient-card); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <span style="font-size: 1.5rem; font-weight: 700; color: var(--color-verde-esmeralda);">3</span>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 0.5rem;">Práctica Continua</h3>
+                                <p style="color: var(--color-text-secondary); line-height: 1.6;">Ejercicios prácticos, recursos didácticos y apoyo constante para reforzar lo aprendido.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="help-item">
+                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 60px; height: 60px; background: var(--gradient-card); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <span style="font-size: 1.5rem; font-weight: 700; color: var(--color-verde-esmeralda);">4</span>
+                            </div>
+                            <div>
+                                <h3 style="font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 0.5rem;">Seguimiento y Mejora</h3>
+                                <p style="color: var(--color-text-secondary); line-height: 1.6;">Evaluaciones periódicas para medir tu progreso y ajustar el plan según tus necesidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEMAS QUE CUBRIMOS -->
+    <section class="temas" style="padding: 6rem 0; background: var(--gradient-primary);">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">Temas Que Cubrimos</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="tema-card" data-aos="fade-up" data-aos-delay="100" style="background: white; padding: 2rem; border-radius: 16px; box-shadow: var(--shadow-md); transition: transform 0.3s ease;">
+                    <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Álgebra</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Ecuaciones lineales y cuadráticas
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Sistemas de ecuaciones
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Polinomios y factorización
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Funciones y gráficas
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tema-card" data-aos="fade-up" data-aos-delay="200" style="background: white; padding: 2rem; border-radius: 16px; box-shadow: var(--shadow-md); transition: transform 0.3s ease;">
+                    <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Geometría</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Geometría plana y espacial
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Teorema de Pitágoras
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Trigonometría
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Áreas y volúmenes
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tema-card" data-aos="fade-up" data-aos-delay="300" style="background: white; padding: 2rem; border-radius: 16px; box-shadow: var(--shadow-md); transition: transform 0.3s ease;">
+                    <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Cálculo</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Límites y continuidad
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Derivadas
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Integrales
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Aplicaciones del cálculo
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tema-card" data-aos="fade-up" data-aos-delay="100" style="background: white; padding: 2rem; border-radius: 16px; box-shadow: var(--shadow-md); transition: transform 0.3s ease;">
+                    <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Estadística</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Probabilidad
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Estadística descriptiva
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Distribuciones de probabilidad
+                        </li>
+                        <li style="padding: 0.5rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.5rem;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Inferencia estadística
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="contacto-form-section" style="padding: 6rem 0; background: var(--color-bg-primary);">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="section-title centered" data-aos="fade-up">Solicita Ayuda en Matemáticas</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Completa el formulario y nos pondremos en contacto contigo lo antes posible
+            </p>
+            
+            <form class="contacto-form" id="helpForm" data-aos="fade-up" data-aos-delay="200" style="background: white; padding: 3rem; border-radius: 24px; box-shadow: var(--shadow-lg); margin-top: 3rem;">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono (Opcional)</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" min="5" max="100" required>
+                </div>
+                
+                <input type="hidden" id="area" name="area" value="Matemáticas">
+                
+                <div class="form-group">
+                    <label for="dificultad">Nivel de Dificultad</label>
+                    <select id="dificultad" name="dificultad" required style="width: 100%; padding: var(--spacing-sm); border: 2px solid #E5E7EB; border-radius: var(--radius-sm); font-family: inherit; font-size: 1rem;">
+                        <option value="">Selecciona un nivel</option>
+                        <option value="Básico">Básico (Primaria/Secundaria)</option>
+                        <option value="Intermedio">Intermedio (Preparatoria)</option>
+                        <option value="Avanzado">Avanzado (Universidad)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">¿En qué tema específico necesitas ayuda?</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Ejemplo: Tengo dificultades con ecuaciones cuadráticas..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">
+                    Solicitar Ayuda
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+                
+                <div class="form-status" id="formStatus"></div>
+            </form>
+            
+            <!-- Contacto alternativo -->
+            <div class="contacto-alternativo" data-aos="fade-up" data-aos-delay="300" style="margin-top: 3rem; text-align: center;">
+                <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem; font-size: 1.1rem;">
+                    O también puedes contactarnos por:
+                </p>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <a href="https://instagram.com/youngdevs" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: var(--gradient-card); border-radius: 12px; transition: transform 0.3s ease;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span style="font-weight: 600; color: var(--color-azul-profundo);">Instagram</span>
+                    </a>
+                    
+                    <a href="https://wa.me/52XXXXXXXXXX" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: var(--gradient-card); border-radius: 12px; transition: transform 0.3s ease;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <span style="font-weight: 600; color: var(--color-azul-profundo);">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Young Devs Logo">
+                        <span>Young Devs</span>
+                    </div>
+                    <p class="footer-description">Talento joven impulsando el futuro. Educación gratuita de calidad para todos.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="mision.html">Nuestra Misión</a></li>
+                        <li><a href="ayuda-general.html">Te Ayudamos</a></li>
+                        <li><a href="sumarse.html">Sumarse</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Áreas de Apoyo</h4>
+                    <ul class="footer-links">
+                        <li><a href="ayuda-matematicas.html">Matemáticas</a></li>
+                        <li><a href="ayuda-robotica.html">Robótica</a></li>
+                        <li><a href="ayuda-ingles.html">Inglés</a></li>
+                        <li><a href="ayuda-programacion.html">Programación</a></li>
+                        <li><a href="ayuda-negocios.html">Para Negocios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <li><a href="aliados.html">Nuestros Aliados</a></li>
+                        <li><a href="mailto:young.devs@gmail.com">young.devs@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Young Devs. Todos los derechos reservados.</p>
+                <p>Potencia tu futuro y ayuda a impulsar el futuro de la juventud</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/form-handler.js"></script>
+
+    <style>
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+        
+        .tema-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .contacto-alternativo a:hover {
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 968px) {
+            .como-ayudamos > div > div {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</body>
+</html>

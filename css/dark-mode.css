@@ -1,0 +1,477 @@
+/* ============================================
+   YOUNG DEVS - DARK MODE
+   ============================================ */
+
+/* === VARIABLES DARK MODE === */
+body.dark-mode {
+    /* Colores oscuros */
+    --color-bg-primary: #0F172A;
+    --color-bg-secondary: #1E293B;
+    --color-text-primary: #1E293B;
+    --color-text-secondary: white;
+    
+    /* Gradientes oscuros */
+    --gradient-primary: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(26, 188, 156, 0.7) 100%);
+    --gradient-card: linear-gradient(135deg, rgba(46, 204, 113, 0.15) 0%, rgba(26, 188, 156, 0.15) 100%);
+    
+    /* Sombras oscuras */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+}
+
+/* === NAVBAR DARK MODE === */
+body.dark-mode .navbar.scrolled {
+    background: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .nav-logo,
+body.dark-mode .nav-link {
+    color: var(--color-text-primary);
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+    background: rgba(46, 204, 113, 0.2);
+    color: var(--color-verde-esmeralda);
+}
+
+body.dark-mode .dropdown-content {
+    background: #1E293B;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .dropdown-content a {
+    color: var(--color-text-primary);
+}
+
+body.dark-mode .dropdown-content a:hover {
+    background: var(--gradient-card);
+    color: var(--color-verde-esmeralda);
+}
+
+body.dark-mode .theme-toggle {
+    background: rgba(46, 204, 113, 0.2);
+    color: var(--color-verde-esmeralda);
+}
+
+body.dark-mode .mobile-menu-toggle span {
+    background: var(--color-text-primary);
+}
+
+/* === MOBILE MENU DARK MODE === */
+@media (max-width: 968px) {
+    body.dark-mode .nav-menu {
+        background: #1E293B;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* === SECTIONS DARK MODE === */
+body.dark-mode .nosotros {
+    background: var(--color-bg-primary);
+}
+
+body.dark-mode .section-title {
+    color: var(--color-text-primary);
+}
+
+body.dark-mode .nosotros-content p {
+    color: var(--color-text-secondary);
+}
+
+body.dark-mode .stat-item {
+    background: var(--gradient-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .stat-label {
+    color: var(--color-text-secondary);
+}
+
+/* === IMPACTO SECTION DARK MODE === */
+body.dark-mode .impacto {
+    background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+}
+
+body.dark-mode .impacto-card {
+    background: #1E293B;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .impacto-card:hover {
+    border-color: var(--color-verde-esmeralda);
+}
+
+body.dark-mode .card-label {
+    color: var(--color-text-secondary);
+}
+
+body.dark-mode .impacto-message {
+    background: #1E293B;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .impacto-message p {
+    color: var(--color-text-secondary);
+}
+
+/* === TESTIMONIOS DARK MODE === */
+body.dark-mode .testimonios {
+    background: var(--color-bg-primary);
+}
+
+body.dark-mode .section-subtitle {
+    color: var(--color-text-secondary);
+}
+
+body.dark-mode .card-back {
+    background: #1E293B;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .testimonial-text {
+    color: var(--color-text-secondary);
+}
+
+body.dark-mode .testimonial-author {
+    color: var(--color-text-primary);
+}
+
+body.dark-mode .cta-button-secondary {
+    background: transparent;
+    color: var(--color-verde-esmeralda);
+    border: 2px solid var(--color-verde-esmeralda);
+}
+
+body.dark-mode .cta-button-secondary:hover {
+    background: var(--color-verde-esmeralda);
+    color: white;
+}
+
+/* === UNETE SECTION DARK MODE === */
+body.dark-mode .unete {
+    background: linear-gradient(135deg, #0F172A, #1E293B);
+}
+
+/* === CONTACTO SECTION DARK MODE === */
+body.dark-mode .contacto {
+    background: var(--color-bg-secondary);
+}
+
+body.dark-mode .contacto-description {
+    color: var(--color-text-secondary);
+}
+
+body.dark-mode .contact-item {
+    background: #0F172A;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .contact-item:hover {
+    border-color: var(--color-verde-esmeralda);
+}
+
+body.dark-mode .contact-item h4 {
+    color: var(--color-text-primary);
+}
+
+body.dark-mode .contact-item p {
+    color: var(--color-text-secondary);
+}
+
+body.dark-mode .contacto-form {
+    background: #0F172A;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .form-group label {
+    color: var(--color-text-primary);
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background: #1E293B;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-text-primary);
+}
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+    color: var(--color-text-secondary);
+    opacity: 0.6;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+    background: #0F172A;
+    border-color: var(--color-verde-esmeralda);
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.2);
+}
+
+/* === FOOTER DARK MODE === */
+body.dark-mode .footer {
+    background: #0F172A;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .footer-description,
+body.dark-mode .footer-links a,
+body.dark-mode .footer-bottom {
+    color: var(--color-text-secondary);
+}
+
+body.dark-mode .footer-links a:hover {
+    color: var(--color-verde-esmeralda);
+}
+
+body.dark-mode .social-links a {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .social-links a:hover {
+    background: var(--color-verde-esmeralda);
+    border-color: var(--color-verde-esmeralda);
+}
+
+/* === CARDS GENERAL DARK MODE === */
+body.dark-mode .nosotros-image img {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .image-decoration {
+    border-color: var(--color-verde-esmeralda);
+}
+
+/* === SCROLL INDICATOR DARK MODE === */
+body.dark-mode .mouse {
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode .wheel {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* === VIDEO OVERLAY DARK MODE === */
+body.dark-mode .video-overlay {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(26, 188, 156, 0.7) 100%);
+}
+
+/* === BUTTONS DARK MODE === */
+body.dark-mode .hero-cta,
+body.dark-mode .cta-button-primary,
+body.dark-mode .submit-button {
+    box-shadow: 0 4px 16px rgba(46, 204, 113, 0.3);
+}
+
+body.dark-mode .hero-cta:hover,
+body.dark-mode .cta-button-primary:hover,
+body.dark-mode .submit-button:hover {
+    box-shadow: 0 8px 32px rgba(46, 204, 113, 0.4);
+}
+
+/* === FORM STATUS DARK MODE === */
+body.dark-mode .form-status.success {
+    background: rgba(46, 204, 113, 0.2);
+    color: #6EE7B7;
+    border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+body.dark-mode .form-status.error {
+    background: rgba(239, 68, 68, 0.2);
+    color: #FCA5A5;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* === SMOOTH TRANSITIONS === */
+body.dark-mode,
+body.dark-mode * {
+    transition: background-color 0.3s ease, 
+                border-color 0.3s ease, 
+                color 0.3s ease;
+}
+
+/* Evitar transición en elementos que ya tienen su propia transición */
+body.dark-mode .testimonial-card,
+body.dark-mode .card-front,
+body.dark-mode .card-back,
+body.dark-mode a,
+body.dark-mode button {
+    transition: all 0.3s ease;
+}
+
+/* === SPECIAL DARK MODE EFFECTS === */
+body.dark-mode .impacto-card.featured {
+    background: linear-gradient(135deg, #2ECC71, #1ABC9C);
+    box-shadow: 0 8px 32px rgba(46, 204, 113, 0.4);
+}
+
+body.dark-mode .impacto-card.featured:hover {
+    box-shadow: 0 12px 48px rgba(46, 204, 113, 0.5);
+}
+
+/* === GLOW EFFECTS DARK MODE === */
+body.dark-mode .hero-title {
+    text-shadow: 0 0 30px rgba(46, 204, 113, 0.3),
+                 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .section-title-large {
+    text-shadow: 0 0 30px rgba(46, 204, 113, 0.2);
+}
+
+/* === CARD ICON GLOW === */
+body.dark-mode .card-icon {
+    background: var(--gradient-card);
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.2);
+}
+
+body.dark-mode .impacto-card:hover .card-icon {
+    box-shadow: 0 0 30px rgba(46, 204, 113, 0.4);
+}
+
+/* === INPUT ERROR DARK MODE === */
+body.dark-mode .input-error {
+    color: #FCA5A5;
+}
+
+/* === LOADING STATE DARK MODE === */
+body.dark-mode .submit-button:disabled {
+    background: #334155;
+    color: #64748B;
+    cursor: not-allowed;
+}
+
+/* === ACCESSIBILITY === */
+body.dark-mode *:focus-visible {
+    outline: 2px solid var(--color-verde-esmeralda);
+    outline-offset: 2px;
+}
+
+/* === CUSTOM SCROLLBAR DARK MODE === */
+body.dark-mode::-webkit-scrollbar {
+    width: 12px;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 6px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+    background: var(--color-verde-esmeralda);
+}
+
+/* === SELECTION COLOR DARK MODE === */
+body.dark-mode ::selection {
+    background: rgba(46, 204, 113, 0.3);
+    color: var(--color-text-primary);
+}
+
+body.dark-mode ::-moz-selection {
+    background: rgba(46, 204, 113, 0.3);
+    color: var(--color-text-primary);
+}
+
+/* === ANIMATED ELEMENTS DARK MODE === */
+body.dark-mode .stat-number {
+    color: var(--color-verde-esmeralda);
+    text-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
+}
+
+body.dark-mode .card-number {
+    color: var(--color-verde-esmeralda);
+    text-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
+}
+
+/* === SPECIAL HOVER STATES === */
+body.dark-mode .testimonial-card:hover {
+    box-shadow: 0 12px 40px rgba(46, 204, 113, 0.2);
+}
+
+body.dark-mode .stat-item:hover {
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.25) 0%, rgba(26, 188, 156, 0.25) 100%);
+    border-color: var(--color-verde-esmeralda);
+}
+
+/* === QUOTE ICON DARK MODE === */
+body.dark-mode .quote-icon {
+    color: var(--color-verde-esmeralda);
+    opacity: 0.6;
+}
+
+/* === ENHANCED CARD BORDERS === */
+body.dark-mode .impacto-card,
+body.dark-mode .contact-item,
+body.dark-mode .stat-item,
+body.dark-mode .contacto-form,
+body.dark-mode .card-back {
+    border: 1px solid rgba(46, 204, 113, 0.1);
+}
+
+/* === GRADIENT OVERLAYS === */
+body.dark-mode .card-overlay {
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.95), transparent);
+}
+
+/* === RESPONSIVE DARK MODE === */
+@media (max-width: 968px) {
+    body.dark-mode .nav-menu {
+        background: rgba(15, 23, 42, 0.98);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media (max-width: 640px) {
+    body.dark-mode .hero-title {
+        text-shadow: 0 0 20px rgba(46, 204, 113, 0.2),
+                     0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* === SUBTLE ANIMATIONS === */
+@keyframes dark-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(46, 204, 113, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(46, 204, 113, 0.4);
+    }
+}
+
+body.dark-mode .impacto-card.featured {
+    animation: dark-glow 3s ease-in-out infinite;
+}
+
+/* === PREMIUM DARK MODE DETAILS === */
+body.dark-mode .footer-col h4 {
+    color: var(--color-verde-esmeralda);
+    text-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
+}
+
+body.dark-mode .section-title {
+    background: linear-gradient(135deg, #F1F5F9, var(--color-verde-esmeralda));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* === PERFORMANCE OPTIMIZATION === */
+body.dark-mode .video-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 23, 42, 0.3);
+    z-index: 1;
+}

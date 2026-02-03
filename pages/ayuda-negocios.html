@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda para Negocios - Young Devs</title>
+    <meta name="description" content="Te ayudamos a crear tu página web o sistema sencillo para tu negocio. Hecho con amor por estudiantes de preparatoria.">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar transparent" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><span>Young Devs</span></a>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="mision.html" class="nav-link">Nuestra Misión</a></li>
+                <li class="dropdown">
+                    <a href="ayuda-general.html" class="nav-link active">Te Ayudamos</a>
+                    <div class="dropdown-content">
+                        <a href="ayuda-matematicas.html">Matemáticas</a>
+                        <a href="ayuda-robotica.html">Robótica</a>
+                        <a href="ayuda-ingles.html">Inglés</a>
+                        <a href="ayuda-programacion.html">Programación</a>
+                        <a href="ayuda-negocios.html">Para Negocios</a>
+                    </div>
+                </li>
+                <li><a href="sumarse.html" class="nav-link">Sumarse</a></li>
+                <li><a href="aliados.html" class="nav-link">Aliados</a></li>
+                <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-area" style="height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+        <div class="business-animation" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #1B365D 0%, #1ABC9C 100%); overflow: hidden;">
+            <!-- Partículas flotantes tipo código/web -->
+            <div style="position: absolute; width: 100%; height: 100%; opacity: 0.12;">
+                <span style="position: absolute; top: 12%; left: 8%; font-size: 2.2rem; color: white; font-family: 'Courier New'; animation: float 7s ease-in-out infinite;">&lt;/&gt;</span>
+                <span style="position: absolute; top: 22%; right: 12%; font-size: 1.8rem; color: white; font-family: 'Courier New'; animation: float 8s ease-in-out infinite;">.css</span>
+                <span style="position: absolute; bottom: 30%; left: 18%; font-size: 2rem; color: white; font-family: 'Courier New'; animation: float 6s ease-in-out infinite;">.html</span>
+                <span style="position: absolute; top: 50%; right: 22%; font-size: 2.4rem; color: white; animation: float 9s ease-in-out infinite;">🌐</span>
+                <span style="position: absolute; bottom: 20%; right: 10%; font-size: 1.9rem; color: white; font-family: 'Courier New'; animation: float 7.5s ease-in-out infinite;">.js</span>
+                <span style="position: absolute; top: 72%; left: 35%; font-size: 2rem; color: white; animation: float 8.5s ease-in-out infinite;">💻</span>
+                <span style="position: absolute; top: 38%; left: 55%; font-size: 1.7rem; color: white; font-family: 'Courier New'; animation: float 10s ease-in-out infinite;">function()</span>
+            </div>
+        </div>
+        
+        <div class="hero-content" style="position: relative; z-index: 2; text-align: center; max-width: 900px; padding: 0 2rem;">
+            <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; backdrop-filter: blur(10px);" data-aos="zoom-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000" style="margin-bottom: 1.5rem;">
+                Para Tu Negocio
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" style="margin: 0 auto 3rem;">
+                Te ayudamos a llevar tu negocio al mundo digital. Creamos tu página web o sistema sencillo de forma gratuita, con mucha ganas y compromiso.
+            </p>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVISO IMPORTANTE: HECHO POR ESTUDIANTES -->
+    <section style="padding: 2.5rem 0; background: linear-gradient(135deg, #FEF3C7, #FDE68A);">
+        <div class="container" style="max-width: 900px;">
+            <div data-aos="fade-up" style="display: flex; align-items: flex-start; gap: 1.5rem; background: rgba(255,255,255,0.7); border-radius: 20px; padding: 2rem 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-left: 6px solid #F59E0B;">
+                <div style="width: 56px; height: 56px; background: #F59E0B; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                </div>
+                <div>
+                    <h3 style="font-family: var(--font-display); font-size: 1.4rem; color: #92400E; margin-bottom: 0.6rem;">
+                        💛 Un pequeño aviso antes de empezar
+                    </h3>
+                    <p style="color: #78350F; line-height: 1.7; font-size: 1.05rem;">
+                        Este servicio es desarrollado por <strong>estudiantes de preparatoria</strong> que hacen todo con mucha ganas y compromiso. Como en cualquier proceso de aprendizaje, <strong>podemos cometer errores en el camino</strong>, pero nos comprometemos a corregirlos siempre. Tu paciencia y confianza nos motivan a mejorar cada día. ¡Gracias por apoyarnos!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUÉ PODEMOS CREAR -->
+    <section style="padding: 6rem 0; background: var(--color-bg-primary);">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">¿Qué Podemos Crear Para Ti?</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Conoce los tipos de proyectos que desarrollamos gratuitamente para tu negocio
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 4rem;">
+                <!-- Página Web -->
+                <div data-aos="fade-up" data-aos-delay="100" style="background: white; border-radius: 24px; box-shadow: var(--shadow-md); overflow: hidden; transition: transform 0.3s ease;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #1B365D, #2ECC71); display: flex; align-items: center; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 style="font-family: var(--font-display); font-size: 1.7rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Página Web</h3>
+                        <p style="color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+                            Creamos una página web profesional para presentar tu negocio al mundo. Atractiva, rápida y adaptada a móviles.
+                        </p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.4rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.6rem; flex-shrink: 0;">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Sección de inicio y presentación
+                            </li>
+                            <li style="padding: 0.4rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.6rem; flex-shrink: 0;">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Productos o servicios que ofreces
+                            </li>
+                            <li style="padding: 0.4rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.6rem; flex-shrink: 0;">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Formulario de contacto
+                            </li>
+                            <li style="padding: 0.4rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.6rem; flex-shrink: 0;">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Diseño responsive (se ve bien en todo dispositivo)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sistema Sencillo -->
+                <div data-aos="fade-up" data-aos-delay="200" style="background: white; border-radius: 24px; box-shadow: var(--shadow-md); overflow: hidden; transition: transform 0.3s ease;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #1ABC9C, #1B365D); display: flex; align-items: center; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 style="font-family: var(--font-display); font-size: 1.7rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Sistema Sencillo</h3>
+                        <p style="color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+                            Desarrollamos sistemas básicos que automaticen procesos simples de tu negocio. Sin necesidad de conocer programación.
+                        </p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.4rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.6rem; flex-shrink: 0;">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Registro de productos o inventario básico
+                            </li>
+                            <li style="padding: 0.4rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.6rem; flex-shrink: 0;">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Sistema de citas o reservaciones
+                            </li>
+                            <li style="padding: 0.4rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.6rem; flex-shrink: 0;">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Registro de clientes sencillo
+                            </li>
+                            <li style="padding: 0.4rem 0; color: var(--color-text-secondary); display: flex; align-items: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); margin-right: 0.6rem; flex-shrink: 0;">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Formularios y recolección de datos
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA EL PROCESO -->
+    <section style="padding: 6rem 0; background: var(--gradient-primary);">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">¿Cómo Funciona el Proceso?</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Es más sencillo de lo que crees. Te acompañamos en cada paso.
+            </p>
+            
+            <div style="max-width: 900px; margin: 4rem auto 0; position: relative;">
+                <!-- Línea vertical conectadora -->
+                <div style="position: absolute; left: 44px; top: 0; bottom: 0; width: 4px; background: linear-gradient(to bottom, var(--color-verde-esmeralda), var(--color-azul-turquesa)); border-radius: 2px; z-index: 0;"></div>
+                
+                <!-- Paso 1 -->
+                <div class="proceso-item" data-aos="fade-right" data-aos-delay="100" style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2.5rem; position: relative; z-index: 1;">
+                    <div style="width: 92px; height: 92px; background: var(--color-verde-esmeralda); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4); border: 4px solid white;">
+                        <span style="font-size: 2rem; font-weight: 800; color: white;">1</span>
+                    </div>
+                    <div style="background: white; padding: 1.8rem 2rem; border-radius: 16px; box-shadow: var(--shadow-md); flex: 1;">
+                        <h3 style="color: var(--color-azul-profundo); font-size: 1.4rem; margin-bottom: 0.5rem;">Nos Cuentes Tu Idea</h3>
+                        <p style="color: var(--color-text-secondary); line-height: 1.6;">Rellena el formulario contándonos qué tipo de negocio tienes y qué necesitas. No necesitas saber nada de tecnología, nosotros te orientamos.</p>
+                    </div>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="proceso-item" data-aos="fade-right" data-aos-delay="200" style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2.5rem; position: relative; z-index: 1;">
+                    <div style="width: 92px; height: 92px; background: var(--color-azul-turquesa); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 15px rgba(26, 188, 156, 0.4); border: 4px solid white;">
+                        <span style="font-size: 2rem; font-weight: 800; color: white;">2</span>
+                    </div>
+                    <div style="background: white; padding: 1.8rem 2rem; border-radius: 16px; box-shadow: var(--shadow-md); flex: 1;">
+                        <h3 style="color: var(--color-azul-profundo); font-size: 1.4rem; margin-bottom: 0.5rem;">Te Contactamos y Platicamos</h3>
+                        <p style="color: var(--color-text-secondary); line-height: 1.6;">Te llamamos o escribimos por WhatsApp para platicar de los detalles. Definimos juntos qué va a incluir tu página o sistema.</p>
+                    </div>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="proceso-item" data-aos="fade-right" data-aos-delay="300" style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2.5rem; position: relative; z-index: 1;">
+                    <div style="width: 92px; height: 92px; background: var(--color-verde-esmeralda); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4); border: 4px solid white;">
+                        <span style="font-size: 2rem; font-weight: 800; color: white;">3</span>
+                    </div>
+                    <div style="background: white; padding: 1.8rem 2rem; border-radius: 16px; box-shadow: var(--shadow-md); flex: 1;">
+                        <h3 style="color: var(--color-azul-profundo); font-size: 1.4rem; margin-bottom: 0.5rem;">Empezamos a Trabajar</h3>
+                        <p style="color: var(--color-text-secondary); line-height: 1.6;">Nuestro equipo de estudiantes comienza a desarrollar tu proyecto. Te mandamos avances para que puedas ver cómo va tomando forma.</p>
+                    </div>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="proceso-item" data-aos="fade-right" data-aos-delay="400" style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2.5rem; position: relative; z-index: 1;">
+                    <div style="width: 92px; height: 92px; background: var(--color-azul-turquesa); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 15px rgba(26, 188, 156, 0.4); border: 4px solid white;">
+                        <span style="font-size: 2rem; font-weight: 800; color: white;">4</span>
+                    </div>
+                    <div style="background: white; padding: 1.8rem 2rem; border-radius: 16px; box-shadow: var(--shadow-md); flex: 1;">
+                        <h3 style="color: var(--color-azul-profundo); font-size: 1.4rem; margin-bottom: 0.5rem;">Revisamos y Ajustamos</h3>
+                        <p style="color: var(--color-text-secondary); line-height: 1.6;">Si algo no te gusta o necesita cambios, lo ajustamos sin problema. Queremos que estés 100% satisfecho con el resultado.</p>
+                    </div>
+                </div>
+
+                <!-- Paso 5 -->
+                <div class="proceso-item" data-aos="fade-right" data-aos-delay="500" style="display: flex; gap: 2rem; align-items: flex-start; position: relative; z-index: 1;">
+                    <div style="width: 92px; height: 92px; background: var(--color-verde-esmeralda); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4); border: 4px solid white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #1B365D, #2ECC71); padding: 1.8rem 2rem; border-radius: 16px; box-shadow: var(--shadow-lg); flex: 1;">
+                        <h3 style="color: white; font-size: 1.4rem; margin-bottom: 0.5rem;">¡Tu Proyecto Listo!</h3>
+                        <p style="color: rgba(255,255,255,0.9); line-height: 1.6;">Te entregamos tu página web o sistema completo. Te explicamos cómo usarlo y te dejamos guías para que todo sea fácil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVISO: LIMITACIONES HONESTAS -->
+    <section style="padding: 4rem 0; background: var(--color-bg-primary);">
+        <div class="container" style="max-width: 900px;">
+            <div data-aos="fade-up" style="background: white; border-radius: 24px; padding: 3rem; box-shadow: var(--shadow-lg); display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div>
+                    <h2 style="font-family: var(--font-display); font-size: 2rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Seamos Honestos</h2>
+                    <p style="color: var(--color-text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+                        Somos estudiantes de preparatoria aprendiendo y creciendo. Eso significa que:
+                    </p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.6rem 0; color: var(--color-text-secondary); display: flex; align-items: flex-start; gap: 0.7rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #F59E0B; flex-shrink: 0; margin-top: 2px;">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>Los proyectos sencillos están muy bien, pero sistemas muy complejos podrían tomarnos más tiempo de lo esperado.</span>
+                        </li>
+                        <li style="padding: 0.6rem 0; color: var(--color-text-secondary); display: flex; align-items: flex-start; gap: 0.7rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #F59E0B; flex-shrink: 0; margin-top: 2px;">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>Puede que cometamos errores técnicos, pero siempre los corregiremos rápido y con comprensión.</span>
+                        </li>
+                        <li style="padding: 0.6rem 0; color: var(--color-text-secondary); display: flex; align-items: flex-start; gap: 0.7rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #F59E0B; flex-shrink: 0; margin-top: 2px;">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>Somos estudiantes, por lo que los horarios de escuela pueden afectar el ritmo del proyecto.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div style="background: #ECFDF5; padding: 1.2rem 1.5rem; border-radius: 14px; display: flex; align-items: flex-start; gap: 0.8rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); flex-shrink: 0;">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span style="color: #065F46; font-weight: 600;">Todo es completamente gratis</span>
+                    </div>
+                    <div style="background: #ECFDF5; padding: 1.2rem 1.5rem; border-radius: 14px; display: flex; align-items: flex-start; gap: 0.8rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); flex-shrink: 0;">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span style="color: #065F46; font-weight: 600;">Nos comprometemos a corregir cualquier error</span>
+                    </div>
+                    <div style="background: #ECFDF5; padding: 1.2rem 1.5rem; border-radius: 14px; display: flex; align-items: flex-start; gap: 0.8rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); flex-shrink: 0;">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span style="color: #065F46; font-weight: 600;">Te acompañamos en todo el proceso</span>
+                    </div>
+                    <div style="background: #ECFDF5; padding: 1.2rem 1.5rem; border-radius: 14px; display: flex; align-items: flex-start; gap: 0.8rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda); flex-shrink: 0;">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span style="color: #065F46; font-weight: 600;">Cada proyecto mejora nuestra experiencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section style="padding: 6rem 0; background: var(--gradient-primary);">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="section-title centered" data-aos="fade-up">Solicita Tu Proyecto</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Cuéntanos sobre tu negocio y qué necesitas. Nosotros nos encargamos del resto.
+            </p>
+            
+            <form class="contacto-form" id="helpForm" data-aos="fade-up" data-aos-delay="200" style="background: white; padding: 3rem; border-radius: 24px; box-shadow: var(--shadow-lg); margin-top: 3rem;">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono (Opcional)</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" min="14" max="100" required>
+                </div>
+                
+                <input type="hidden" id="area" name="area" value="Negocios - Desarrollo Web/Sistema">
+                
+                <div class="form-group">
+                    <label for="tipo-proyecto">¿Qué necesitas?</label>
+                    <select id="tipo-proyecto" name="tipo-proyecto" required style="width: 100%; padding: var(--spacing-sm); border: 2px solid #E5E7EB; border-radius: var(--radius-sm); font-family: inherit; font-size: 1rem;">
+                        <option value="">Selecciona una opción</option>
+                        <option value="Página web básica">Página web básica para mi negocio</option>
+                        <option value="Página web con secciones">Página web con múltiples secciones</option>
+                        <option value="Sistema de registro">Sistema de registro sencillo</option>
+                        <option value="Sistema de citas">Sistema de citas/reservaciones</option>
+                        <option value="Sistema de inventario">Sistema de inventario básico</option>
+                        <option value="No estoy seguro">No estoy seguro, necesito orientación</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="negocio">¿Cuéntanos sobre tu negocio!</label>
+                    <textarea id="negocio" name="negocio" rows="4" placeholder="Ejemplo: Tengo una tienda de pasteles y necesito una página donde la gente pueda ver mis productos y contactarme..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">¿Hay algo más que quieras que sepa el equipo?</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Cualquier detalle extra que nos ayude a entender mejor lo que necesitas..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">
+                    Solicitar Mi Proyecto
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+                
+                <div class="form-status" id="formStatus"></div>
+            </form>
+            
+            <!-- Contacto alternativo -->
+            <div data-aos="fade-up" data-aos-delay="300" style="margin-top: 3rem; text-align: center;">
+                <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem; font-size: 1.1rem;">
+                    O también puedes contactarnos directamente por:
+                </p>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <a href="https://instagram.com/youngdevs" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: var(--gradient-card); border-radius: 12px; transition: transform 0.3s ease; text-decoration: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span style="font-weight: 600; color: var(--color-azul-profundo);">Instagram</span>
+                    </a>
+                    
+                    <a href="https://wa.me/52XXXXXXXXXX" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: var(--gradient-card); border-radius: 12px; transition: transform 0.3s ease; text-decoration: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <span style="font-weight: 600; color: var(--color-azul-profundo);">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Young Devs Logo">
+                        <span>Young Devs</span>
+                    </div>
+                    <p class="footer-description">Talento joven impulsando el futuro. Educación gratuita de calidad para todos.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="mision.html">Nuestra Misión</a></li>
+                        <li><a href="ayuda-general.html">Te Ayudamos</a></li>
+                        <li><a href="sumarse.html">Sumarse</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Áreas de Apoyo</h4>
+                    <ul class="footer-links">
+                        <li><a href="ayuda-matematicas.html">Matemáticas</a></li>
+                        <li><a href="ayuda-robotica.html">Robótica</a></li>
+                        <li><a href="ayuda-ingles.html">Inglés</a></li>
+                        <li><a href="ayuda-programacion.html">Programación</a></li>
+                        <li><a href="ayuda-negocios.html">Para Negocios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <li><a href="aliados.html">Nuestros Aliados</a></li>
+                        <li><a href="mailto:young.devs@gmail.com">young.devs@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Young Devs. Todos los derechos reservados.</p>
+                <p>Potencia tu futuro y ayuda a impulsar el futuro de la juventud</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/form-handler.js"></script>
+
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-22px); }
+        }
+        
+        .proceso-item:hover > div:first-child {
+            transform: scale(1.08);
+            transition: transform 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .proceso-item {
+                /* Ocultar línea vertical en móvil */
+            }
+        }
+    </style>
+</body>
+</html>

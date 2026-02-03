@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Aliados - Young Devs</title>
+    <meta name="description" content="Conoce a las empresas e instituciones que apoyan a Young Devs en nuestra misión educativa.">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar transparent" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../assets/images/logo.png" alt="Young Devs Logo">
+                <a href="../index.html"><span>Young Devs</span></a>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="mision.html" class="nav-link">Nuestra Misión</a></li>
+                <li class="dropdown">
+                    <a href="ayuda-general.html" class="nav-link">Te Ayudamos</a>
+                    <div class="dropdown-content">
+                        <a href="ayuda-matematicas.html">Matemáticas</a>
+                        <a href="ayuda-robotica.html">Robótica</a>
+                        <a href="ayuda-ingles.html">Inglés</a>
+                        <a href="ayuda-programacion.html">Programación</a>
+                        <a href="ayuda-negocios.html">Para Negocios</a>
+                    </div>
+                </li>
+                <li><a href="sumarse.html" class="nav-link">Sumarse</a></li>
+                <li><a href="aliados.html" class="nav-link active">Aliados</a></li>
+                <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-area" style="height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #1B365D 0%, #1ABC9C 100%); overflow: hidden;">
+            <!-- Partículas decorativas -->
+            <div style="position: absolute; width: 100%; height: 100%; opacity: 0.08;">
+                <div style="position: absolute; top: 15%; left: 10%; width: 200px; height: 200px; border: 3px solid white; border-radius: 50%; animation: floatCircle 8s ease-in-out infinite;"></div>
+                <div style="position: absolute; top: 55%; right: 8%; width: 140px; height: 140px; border: 3px solid white; border-radius: 50%; animation: floatCircle 10s ease-in-out infinite;"></div>
+                <div style="position: absolute; bottom: 15%; left: 30%; width: 100px; height: 100px; border: 3px solid white; border-radius: 50%; animation: floatCircle 7s ease-in-out infinite;"></div>
+                <div style="position: absolute; top: 30%; right: 30%; width: 160px; height: 160px; border: 3px solid white; border-radius: 50%; animation: floatCircle 9s ease-in-out infinite;"></div>
+                <div style="position: absolute; bottom: 30%; right: 25%; width: 80px; height: 80px; border: 3px solid white; border-radius: 50%; animation: floatCircle 6s ease-in-out infinite;"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content" style="position: relative; z-index: 2; text-align: center; max-width: 900px; padding: 0 2rem;">
+            <div style="width: 120px; height: 120px; background: rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; backdrop-filter: blur(10px);" data-aos="zoom-in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000" style="margin-bottom: 1.5rem;">
+                Nuestros Aliados
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" style="margin: 0 auto;">
+                Detrás de Young Devs hay personas e instituciones que creen en el poder de la educación gratuita. Conoce a quienes hacen posible nuestra misión.
+            </p>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACTO CONJUNTO -->
+    <section style="padding: 5rem 0; background: var(--color-bg-primary);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 1rem;">
+                <div data-aos="fade-up" data-aos-delay="100" style="text-align: center; background: white; padding: 2.5rem 1.5rem; border-radius: 20px; box-shadow: var(--shadow-md);">
+                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="12">0</div>
+                    <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-top: 0.5rem;">Aliados Activos</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" style="text-align: center; background: white; padding: 2.5rem 1.5rem; border-radius: 20px; box-shadow: var(--shadow-md);">
+                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="500">0</div>
+                    <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-top: 0.5rem;">Estudiantes Apoyados</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" style="text-align: center; background: white; padding: 2.5rem 1.5rem; border-radius: 20px; box-shadow: var(--shadow-md);">
+                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="50">0</div>
+                    <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-top: 0.5rem;">Proyectos Exitosos</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400" style="text-align: center; background: white; padding: 2.5rem 1.5rem; border-radius: 20px; box-shadow: var(--shadow-md);">
+                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="5">0</div>
+                    <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-top: 0.5rem;">Áreas Cubiertas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALIADOS PRINCIPALES -->
+    <section style="padding: 6rem 0; background: var(--gradient-primary);">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">Empresas e Instituciones</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Estas organizaciones creen en nuestra misión y nos apoyan activamente
+            </p>
+            
+            <!-- Grid de logos placeholder -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div data-aos="zoom-in" data-aos-delay="100" style="background: white; border-radius: 20px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-md); transition: transform 0.3s ease; min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="width: 90px; height: 90px; background: var(--gradient-card); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem;">
+                        <img src="../assets/images/partners/partner1.png" alt="Aliado 1" style="max-width: 70px; max-height: 70px; object-fit: contain;">
+                    </div>
+                    <h4 style="color: var(--color-azul-profundo); font-size: 1.1rem; margin-bottom: 0.4rem;">Nombre del Aliado</h4>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Descripción breve del tipo de apoyo</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="200" style="background: white; border-radius: 20px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-md); transition: transform 0.3s ease; min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="width: 90px; height: 90px; background: var(--gradient-card); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem;">
+                        <img src="../assets/images/partners/partner2.png" alt="Aliado 2" style="max-width: 70px; max-height: 70px; object-fit: contain;">
+                    </div>
+                    <h4 style="color: var(--color-azul-profundo); font-size: 1.1rem; margin-bottom: 0.4rem;">Nombre del Aliado</h4>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Descripción breve del tipo de apoyo</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="300" style="background: white; border-radius: 20px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-md); transition: transform 0.3s ease; min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="width: 90px; height: 90px; background: var(--gradient-card); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem;">
+                        <img src="../assets/images/partners/partner3.png" alt="Aliado 3" style="max-width: 70px; max-height: 70px; object-fit: contain;">
+                    </div>
+                    <h4 style="color: var(--color-azul-profundo); font-size: 1.1rem; margin-bottom: 0.4rem;">Nombre del Aliado</h4>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Descripción breve del tipo de apoyo</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="100" style="background: white; border-radius: 20px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-md); transition: transform 0.3s ease; min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="width: 90px; height: 90px; background: var(--gradient-card); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem;">
+                        <img src="../assets/images/partners/partner4.png" alt="Aliado 4" style="max-width: 70px; max-height: 70px; object-fit: contain;">
+                    </div>
+                    <h4 style="color: var(--color-azul-profundo); font-size: 1.1rem; margin-bottom: 0.4rem;">Nombre del Aliado</h4>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Descripción breve del tipo de apoyo</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="200" style="background: white; border-radius: 20px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-md); transition: transform 0.3s ease; min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="width: 90px; height: 90px; background: var(--gradient-card); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem;">
+                        <img src="../assets/images/partners/partner5.png" alt="Aliado 5" style="max-width: 70px; max-height: 70px; object-fit: contain;">
+                    </div>
+                    <h4 style="color: var(--color-azul-profundo); font-size: 1.1rem; margin-bottom: 0.4rem;">Nombre del Aliado</h4>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Descripción breve del tipo de apoyo</p>
+                </div>
+
+                <div data-aos="zoom-in" data-aos-delay="300" style="background: white; border-radius: 20px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-md); transition: transform 0.3s ease; min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="width: 90px; height: 90px; background: var(--gradient-card); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem;">
+                        <img src="../assets/images/partners/partner6.png" alt="Aliado 6" style="max-width: 70px; max-height: 70px; object-fit: contain;">
+                    </div>
+                    <h4 style="color: var(--color-azul-profundo); font-size: 1.1rem; margin-bottom: 0.4rem;">Nombre del Aliado</h4>
+                    <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Descripción breve del tipo de apoyo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO APOYAN -->
+    <section style="padding: 6rem 0; background: var(--color-bg-primary);">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">¿Cómo Nos Apoyan?</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Cada aliado contribuye de forma única a nuestra causa
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 4rem;">
+                <div data-aos="fade-right">
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #2ECC71, #1ABC9C); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 style="color: var(--color-azul-profundo); font-size: 1.3rem; margin-bottom: 0.4rem;">Recursos Educativos</h3>
+                                <p style="color: var(--color-text-secondary); line-height: 1.6;">Proporcionan materiales, herramientas y plataformas educativas que enriquecen el proceso de aprendizaje.</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1B365D, #2ECC71); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21H8"></path>
+                                    <path d="M12 17v4"></path>
+                                    <path d="M2 7l10-4 10 4"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 style="color: var(--color-azul-profundo); font-size: 1.3rem; margin-bottom: 0.4rem;">Equipos y Tecnología</h3>
+                                <p style="color: var(--color-text-secondary); line-height: 1.6;">Donan computadoras, componentes electrónicos y equipos necesarios para los proyectos de robótica y programación.</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1ABC9C, #1B365D); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 style="color: var(--color-azul-profundo); font-size: 1.3rem; margin-bottom: 0.4rem;">Mentores Profesionales</h3>
+                                <p style="color: var(--color-text-secondary); line-height: 1.6;">Profesionales de empresas aliadas comparten su experiencia directamente con nuestros estudiantes y voluntarios.</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #2ECC71, #1B365D); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 style="color: var(--color-azul-profundo); font-size: 1.3rem; margin-bottom: 0.4rem;">Espacios y Eventos</h3>
+                                <p style="color: var(--color-text-secondary); line-height: 1.6;">Ceden espacios para talleres, charlas y eventos que conectan a estudiantes con profesionales del mundo real.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left" style="position: relative;">
+                    <img src="../assets/images/nosotros.jpg" alt="Nuestros Aliados" style="width: 100%; border-radius: 24px; box-shadow: var(--shadow-lg);">
+                    <div style="position: absolute; top: -15px; right: -15px; width: 100%; height: 100%; border: 3px solid var(--color-verde-esmeralda); border-radius: 24px; z-index: -1;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SER UN ALIADO -->
+    <section style="padding: 6rem 0; background: linear-gradient(135deg, #1B365D 0%, #2ECC71 100%);">
+        <div class="container" style="max-width: 850px; text-align: center;">
+            <h2 data-aos="fade-up" style="font-family: var(--font-display); font-size: 2.8rem; color: white; margin-bottom: 1rem;">¿Quieres Ser Aliado?</h2>
+            <p data-aos="fade-up" data-aos-delay="100" style="color: rgba(255,255,255,0.9); font-size: 1.15rem; line-height: 1.8; max-width: 700px; margin: 0 auto 1.5rem;">
+                Si tu empresa o institución comparte nuestra visión de democratizar la educación, nos encantaría que formaras parte de la familia Young Devs. Juntos podemos crear un impacto mucho mayor.
+            </p>
+            <a href="contacto.html" data-aos="fade-up" data-aos-delay="200" style="display: inline-flex; align-items: center; gap: 0.7rem; background: white; color: var(--color-azul-profundo); padding: 1rem 2.2rem; border-radius: 50px; font-weight: 700; font-size: 1.1rem; text-decoration: none; box-shadow: 0 4px 20px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                Contactar al Equipo
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Young Devs Logo">
+                        <span>Young Devs</span>
+                    </div>
+                    <p class="footer-description">Talento joven impulsando el futuro. Educación gratuita de calidad para todos.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="mision.html">Nuestra Misión</a></li>
+                        <li><a href="ayuda-general.html">Te Ayudamos</a></li>
+                        <li><a href="sumarse.html">Sumarse</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Áreas de Apoyo</h4>
+                    <ul class="footer-links">
+                        <li><a href="ayuda-matematicas.html">Matemáticas</a></li>
+                        <li><a href="ayuda-robotica.html">Robótica</a></li>
+                        <li><a href="ayuda-ingles.html">Inglés</a></li>
+                        <li><a href="ayuda-programacion.html">Programación</a></li>
+                        <li><a href="ayuda-negocios.html">Para Negocios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <li><a href="aliados.html">Nuestros Aliados</a></li>
+                        <li><a href="mailto:young.devs@gmail.com">young.devs@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Young Devs. Todos los derechos reservados.</p>
+                <p>Potencia tu futuro y ayuda a impulsar el futuro de la juventud</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+
+    <style>
+        @keyframes floatCircle {
+            0%, 100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-25px) scale(1.05); }
+        }
+
+        .aliado-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .aliado-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+        }
+    </style>
+</body>
+</html>

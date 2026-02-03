@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Devs - Talento Joven Impulsando el Futuro</title>
+    <meta name="description" content="Proyecto social que ofrece ayuda gratuita en matemáticas, robótica, inglés, programación y negocios. Apostamos por la juventud.">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    
+    <!-- AOS Library for animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar transparent" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><span>Young Devs</span></a>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                <li><a href="pages/mision.html" class="nav-link">Nuestra Misión</a></li>
+                <li class="dropdown">
+                    <a href="pages/ayuda-general.html" class="nav-link">Te Ayudamos</a>
+                    <div class="dropdown-content">
+                        <a href="pages/ayuda-matematicas.html">Matemáticas</a>
+                        <a href="pages/ayuda-robotica.html">Robótica</a>
+                        <a href="pages/ayuda-ingles.html">Inglés</a>
+                        <a href="pages/ayuda-programacion.html">Programación</a>
+                        <a href="pages/ayuda-negocios.html">Para Negocios</a>
+                    </div>
+                </li>
+                <li><a href="pages/sumarse.html" class="nav-link">Sumarse</a></li>
+                <li><a href="pages/aliados.html" class="nav-link">Aliados</a></li>
+                <li><a href="pages/contacto.html" class="nav-link">Contáctanos</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="assets/videos/young-devs-home.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-right" data-aos-duration="1000">
+                Young Devs
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                Talento joven impulsando el futuro
+            </p>
+            <a href="#nosotros" class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                Descubre más
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+            </a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSOTROS SECTION -->
+    <section class="nosotros" id="nosotros">
+        <div class="container">
+            <div class="nosotros-grid">
+                <div class="nosotros-image" data-aos="fade-right" data-aos-duration="800">
+                    <img src="assets/images/logo.png" alt="Young Devs Team">
+                    <div class="image-decoration"></div>
+                </div>
+                <div class="nosotros-content" data-aos="fade-left" data-aos-duration="800">
+                    <h2 class="section-title">Nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3 class="stat-number">500+</h3>
+                            <p class="stat-label">Estudiantes</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">50+</h3>
+                            <p class="stat-label">Voluntarios</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">100%</h3>
+                            <p class="stat-label">Gratuito</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACTO SOCIAL SECTION -->
+    <section class="impacto" id="impacto">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">Nuestro Impacto Social</h2>
+            
+            <div class="impacto-grid">
+                <div class="impacto-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-number">500+</h3>
+                    <p class="card-label">Estudiantes Apoyados</p>
+                </div>
+                
+                <div class="impacto-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-number">25+</h3>
+                    <p class="card-label">Empresas Colaboradoras</p>
+                </div>
+                
+                <div class="impacto-card featured" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-number featured-number">COSTO $0</h3>
+                    <p class="card-label">100% Gratuito</p>
+                    <p class="card-description">Todo nuestro apoyo es completamente gratuito. Nuestra inversión es en el futuro de la juventud.</p>
+                </div>
+                
+                <div class="impacto-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="card-number">1000+</h3>
+                    <p class="card-label">Horas de Mentoría</p>
+                </div>
+                
+                <div class="impacto-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="card-number">95%</h3>
+                    <p class="card-label">Tasa de Éxito</p>
+                </div>
+            </div>
+            
+            <div class="impacto-message" data-aos="fade-up" data-aos-delay="400">
+                <p>Nuestro impacto va más allá de los números. Cada estudiante que apoyamos representa un futuro más brillante, una oportunidad de crecimiento y un paso hacia la construcción de una sociedad más equitativa. Creemos firmemente que la educación de calidad debe estar al alcance de todos, sin importar su situación económica.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS SECTION -->
+    <section class="testimonios" id="testimonios">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">Testimonios</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Lo que dicen quienes han sido parte de Young Devs</p>
+            
+            <div class="testimonios-grid">
+                <div class="testimonial-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card-inner"> <div class="card-front">
+                            <img src="assets/images/logo.png" alt="Testimonio 1">
+                            <div class="card-overlay">
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">Gracias a Young Devs pude mejorar mis habilidades...</p>
+                            <p class="testimonial-author">- María González</p>
+                            <p class="testimonial-role">Estudiante de Programación</p>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="testimonial-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card-front">
+                        <img src="assets/images/testimonials/student2.jpg" alt="Testimonio 2">
+                        <div class="card-overlay">
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">El apoyo en matemáticas que recibí fue excepcional. Pasé de reprobar a ser uno de los mejores de mi clase. Estoy muy agradecido.</p>
+                        <p class="testimonial-author">- Carlos Ramírez</p>
+                        <p class="testimonial-role">Estudiante de Matemáticas</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="card-front">
+                        <img src="assets/images/testimonials/student3.jpg" alt="Testimonio 3">
+                    </div>
+                    <div class="card-back">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">La robótica siempre me pareció complicada, pero con la paciencia y dedicación de los mentores, ahora puedo crear mis propios proyectos.</p>
+                        <p class="testimonial-author">- Ana Martínez</p>
+                        <p class="testimonial-role">Estudiante de Robótica</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card-front">
+                        <img src="assets/images/testimonials/student4.jpg" alt="Testimonio 4">
+                    </div>
+                    <div class="card-back">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">Mi inglés mejoró muchísimo. Ahora puedo comunicarme con confianza y tengo mejores oportunidades laborales. ¡Gracias Young Devs!</p>
+                        <p class="testimonial-author">- Luis Hernández</p>
+                        <p class="testimonial-role">Estudiante de Inglés</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card-front">
+                        <img src="assets/images/testimonials/student5.jpg" alt="Testimonio 5">
+                    </div>
+                    <div class="card-back">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">Como emprendedor, el apoyo en gestión de negocios fue fundamental. Aprendí a estructurar mi startup de manera profesional.</p>
+                        <p class="testimonial-author">- Roberto Silva</p>
+                        <p class="testimonial-role">Emprendedor</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="card-front">
+                        <img src="assets/images/testimonials/student6.jpg" alt="Testimonio 6">
+
+                    </div>
+                    <div class="card-back">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">La calidad de la enseñanza es igual o mejor que la de instituciones pagadas. No puedo creer que sea totalmente gratis.</p>
+                        <p class="testimonial-author">- Sofía Flores</p>
+                        <p class="testimonial-role">Estudiante Multidisciplinaria</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonios-cta" data-aos="zoom-in" data-aos-delay="400">
+                <button class="cta-button-secondary">
+                    Y todo esto... ¡GRATIS!
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNETE SECTION -->
+    <section class="unete" id="unete">
+        <div class="container">
+            <div class="unete-content" data-aos="fade-up">
+                <h2 class="section-title-large">Únete al Movimiento</h2>
+                <p class="unete-text">¿Quieres ser parte del cambio? Únete a nuestro equipo de voluntarios y ayuda a transformar vidas a través de la educación. Tu conocimiento puede marcar la diferencia.</p>
+                <a href="pages/sumarse.html" class="cta-button-primary">
+                    Quiero Ser Voluntario
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO SECTION -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <div class="contacto-grid">
+                <div class="contacto-info" data-aos="fade-right">
+                    <h2 class="section-title">Contáctanos</h2>
+                    <p class="contacto-description">¿Tienes alguna duda? Háznoslo saber</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <div>
+                                <h4>Email</h4>
+                                <p>young.devs@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p>@youngdevs</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+52 XXX XXX XXXX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contacto-form" id="contactForm" data-aos="fade-left">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono (Opcional)</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        Enviar Mensaje
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                    
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Young Devs Logo">
+                        <span>Young Devs</span>
+                    </div>
+                    <p class="footer-description">Talento joven impulsando el futuro. Educación gratuita de calidad para todos.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="pages/mision.html">Nuestra Misión</a></li>
+                        <li><a href="pages/ayuda-general.html">Te Ayudamos</a></li>
+                        <li><a href="pages/sumarse.html">Sumarse</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Áreas de Apoyo</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/ayuda-matematicas.html">Matemáticas</a></li>
+                        <li><a href="pages/ayuda-robotica.html">Robótica</a></li>
+                        <li><a href="pages/ayuda-ingles.html">Inglés</a></li>
+                        <li><a href="pages/ayuda-programacion.html">Programación</a></li>
+                        <li><a href="pages/ayuda-negocios.html">Para Negocios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/contacto.html">Contáctanos</a></li>
+                        <li><a href="pages/aliados.html">Nuestros Aliados</a></li>
+                        <li><a href="mailto:young.devs@gmail.com">young.devs@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Young Devs. Todos los derechos reservados.</p>
+                <p>Potencia tu futuro y ayuda a impulsar el futuro de la juventud</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form-handler.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Ayudamos - Young Devs</title>
+    <meta name="description" content="Descubre cómo podemos ayudarte en matemáticas, robótica, inglés, programación y negocios. Todo completamente gratis.">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar transparent" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><span>Young Devs</span></a>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="mision.html" class="nav-link">Nuestra Misión</a></li>
+                <li class="dropdown">
+                    <a href="ayuda-general.html" class="nav-link active">Te Ayudamos</a>
+                    <div class="dropdown-content">
+                        <a href="ayuda-matematicas.html">Matemáticas</a>
+                        <a href="ayuda-robotica.html">Robótica</a>
+                        <a href="ayuda-ingles.html">Inglés</a>
+                        <a href="ayuda-programacion.html">Programación</a>
+                        <a href="ayuda-negocios.html">Para Negocios</a>
+                    </div>
+                </li>
+                <li><a href="sumarse.html" class="nav-link">Sumarse</a></li>
+                <li><a href="aliados.html" class="nav-link">Aliados</a></li>
+                <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="../assets/videos/young-devs-hero.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="hero-content" style="text-align: center; max-width: 900px; margin: 0 auto;">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">
+                ¿En Qué Te Podemos Ayudar?
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" style="margin: 0 auto;">
+                Ofrecemos apoyo educativo en múltiples áreas, todo completamente gratis. Tu único costo es apostar por tu futuro.
+            </p>
+        </div>
+    </section>
+
+    <!-- AREAS DE AYUDA -->
+    <section class="areas-ayuda" style="padding: 6rem 0; background: var(--color-bg-primary);">
+        <div class="container">
+            <div class="areas-grid" style="display: grid; gap: 3rem;">
+                
+                <!-- Matemáticas -->
+                <div class="area-card-large" data-aos="fade-up" data-aos-delay="100" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; background: white; padding: 3rem; border-radius: 24px; box-shadow: var(--shadow-lg); transition: all 0.3s ease;">
+                    <div class="area-image" style="position: relative; overflow: hidden; border-radius: 16px; height: 350px;">
+                        <img src="../assets/images/areas/matematicas.jpg" alt="Matemáticas" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div class="area-content">
+                        <div style="width: 80px; height: 80px; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <h3 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Matemáticas</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                            Desde álgebra básica hasta cálculo avanzado. Nuestros mentores te guiarán paso a paso, haciendo las matemáticas comprensibles y hasta divertidas.
+                        </p>
+                        <a href="ayuda-matematicas.html" class="cta-button-primary">
+                            Solicitar Ayuda en Matemáticas
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Robótica -->
+                <div class="area-card-large" data-aos="fade-up" data-aos-delay="200" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; background: white; padding: 3rem; border-radius: 24px; box-shadow: var(--shadow-lg); transition: all 0.3s ease;">
+                    <div class="area-content" style="order: 1;">
+                        <div style="width: 80px; height: 80px; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                                <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                                <polyline points="17 2 12 7 7 2"></polyline>
+                            </svg>
+                        </div>
+                        <h3 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Robótica</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                            Aprende a diseñar, construir y programar robots. Desde conceptos básicos de electrónica hasta proyectos avanzados con Arduino y Raspberry Pi.
+                        </p>
+                        <a href="ayuda-robotica.html" class="cta-button-primary">
+                            Solicitar Ayuda en Robótica
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="area-image" style="position: relative; overflow: hidden; border-radius: 16px; height: 350px; order: 2;">
+                        <img src="../assets/images/areas/robotica.jpg" alt="Robótica" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                </div>
+
+                <!-- Inglés -->
+                <div class="area-card-large" data-aos="fade-up" data-aos-delay="300" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; background: white; padding: 3rem; border-radius: 24px; box-shadow: var(--shadow-lg); transition: all 0.3s ease;">
+                    <div class="area-image" style="position: relative; overflow: hidden; border-radius: 16px; height: 350px;">
+                        <img src="../assets/images/areas/ingles.jpg" alt="Inglés" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div class="area-content">
+                        <div style="width: 80px; height: 80px; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <h3 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Inglés</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                            Mejora tu inglés con clases personalizadas. Desde nivel básico hasta avanzado, enfocándonos en conversación, gramática y preparación para certificaciones.
+                        </p>
+                        <a href="ayuda-ingles.html" class="cta-button-primary">
+                            Solicitar Ayuda en Inglés
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Programación -->
+                <div class="area-card-large" data-aos="fade-up" data-aos-delay="100" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; background: white; padding: 3rem; border-radius: 24px; box-shadow: var(--shadow-lg); transition: all 0.3s ease;">
+                    <div class="area-content" style="order: 1;">
+                        <div style="width: 80px; height: 80px; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Programación</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                            Domina lenguajes como Python, JavaScript, Java y más. Aprende desarrollo web, aplicaciones móviles y ciencia de datos con proyectos prácticos.
+                        </p>
+                        <a href="ayuda-programacion.html" class="cta-button-primary">
+                            Solicitar Ayuda en Programación
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="area-image" style="position: relative; overflow: hidden; border-radius: 16px; height: 350px; order: 2;">
+                        <img src="../assets/images/areas/programacion.jpg" alt="Programación" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                </div>
+
+                <!-- Para Negocios -->
+                <div class="area-card-large" data-aos="fade-up" data-aos-delay="200" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; background: white; padding: 3rem; border-radius: 24px; box-shadow: var(--shadow-lg); transition: all 0.3s ease;">
+                    <div class="area-image" style="position: relative; overflow: hidden; border-radius: 16px; height: 350px;">
+                        <img src="../assets/images/areas/negocios.jpg" alt="Negocios" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div class="area-content">
+                        <div style="width: 80px; height: 80px; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Para Negocios</h3>
+                        <p style="color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+                            Aprende a gestionar tu emprendimiento o negocio. Marketing digital, finanzas, planificación estratégica y todo lo que necesitas para tener éxito.
+                        </p>
+                        <a href="ayuda-negocios.html" class="cta-button-primary">
+                            Solicitar Ayuda en Negocios
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Young Devs Logo">
+                        <span>Young Devs</span>
+                    </div>
+                    <p class="footer-description">Talento joven impulsando el futuro. Educación gratuita de calidad para todos.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="mision.html">Nuestra Misión</a></li>
+                        <li><a href="ayuda-general.html">Te Ayudamos</a></li>
+                        <li><a href="sumarse.html">Sumarse</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Áreas de Apoyo</h4>
+                    <ul class="footer-links">
+                        <li><a href="ayuda-matematicas.html">Matemáticas</a></li>
+                        <li><a href="ayuda-robotica.html">Robótica</a></li>
+                        <li><a href="ayuda-ingles.html">Inglés</a></li>
+                        <li><a href="ayuda-programacion.html">Programación</a></li>
+                        <li><a href="ayuda-negocios.html">Para Negocios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <li><a href="aliados.html">Nuestros Aliados</a></li>
+                        <li><a href="mailto:young.devs@gmail.com">young.devs@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Young Devs. Todos los derechos reservados.</p>
+                <p>Potencia tu futuro y ayuda a impulsar el futuro de la juventud</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+
+    <style>
+        .area-card-large:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .area-image:hover img {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 968px) {
+            .area-card-large {
+                grid-template-columns: 1fr !important;
+            }
+            
+            .area-content {
+                order: 2 !important;
+            }
+            
+            .area-image {
+                order: 1 !important;
+            }
+        }
+    </style>
+</body>
+</html>

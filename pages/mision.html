@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Misión - Young Devs</title>
+    <meta name="description" content="Conoce nuestra misión, visión y objetivos. Young Devs trabaja para democratizar la educación de calidad.">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar transparent" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html"><span>Young Devs</span></a>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="mision.html" class="nav-link active">Nuestra Misión</a></li>
+                <li class="dropdown">
+                    <a href="ayuda-general.html" class="nav-link">Te Ayudamos</a>
+                    <div class="dropdown-content">
+                        <a href="ayuda-matematicas.html">Matemáticas</a>
+                        <a href="ayuda-robotica.html">Robótica</a>
+                        <a href="ayuda-ingles.html">Inglés</a>
+                        <a href="ayuda-programacion.html">Programación</a>
+                        <a href="ayuda-negocios.html">Para Negocios</a>
+                    </div>
+                </li>
+                <li><a href="sumarse.html" class="nav-link">Sumarse</a></li>
+                <li><a href="aliados.html" class="nav-link">Aliados</a></li>
+                <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="../assets/videos/young-devs-hero.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="hero-content" style="max-width: 1400px; margin: 0 auto; padding: 0 4rem;">
+            <div style="max-width: 700px; margin-left: auto; text-align: right;">
+                <h1 class="hero-title" data-aos="fade-left" data-aos-duration="1000" style="text-align: right;">
+                    ¿Quiénes Somos?
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" style="text-align: right; margin-left: auto;">
+                    Somos un colectivo de jóvenes apasionados por la educación y la tecnología, comprometidos con transformar vidas a través del conocimiento compartido.
+                </p>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION Y OBJETIVOS -->
+    <section class="vision-objetivos" style="padding: 6rem 0; background: var(--color-bg-primary);">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">Nuestra Visión y Objetivos</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Aspiramos a crear un mundo donde el conocimiento sea accesible para todos
+            </p>
+
+            <div class="objetivos-slider" style="margin-top: 4rem;">
+                <!-- Objetivo 1 -->
+                <div class="objetivo-item" data-aos="fade-up" data-aos-delay="100" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+                    <div class="objetivo-image" style="position: relative; overflow: hidden; border-radius: 24px;">
+                        <img src="../assets/images/vision-1.jpg" alt="Acceso Universal" style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div class="objetivo-content">
+                        <h3 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">
+                            Acceso Universal
+                        </h3>
+                        <p style="color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8;">
+                            Queremos eliminar las barreras económicas que impiden a jóvenes talentosos acceder a educación de calidad. Creemos que el conocimiento es un derecho, no un privilegio.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 2 -->
+                <div class="objetivo-item" data-aos="fade-up" data-aos-delay="200" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+                    <div class="objetivo-content" style="order: 1;">
+                        <h3 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">
+                            Mentoría de Calidad
+                        </h3>
+                        <p style="color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8;">
+                            Conectamos estudiantes con mentores experimentados que no solo enseñan, sino que inspiran y guían. Cada mentor es cuidadosamente seleccionado por su pasión y compromiso.
+                        </p>
+                    </div>
+                    <div class="objetivo-image" style="position: relative; overflow: hidden; border-radius: 24px; order: 2;">
+                        <img src="../assets/images/vision-2.jpg" alt="Mentoría" style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                </div>
+
+                <!-- Objetivo 3 -->
+                <div class="objetivo-item" data-aos="fade-up" data-aos-delay="300" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+                    <div class="objetivo-image" style="position: relative; overflow: hidden; border-radius: 24px;">
+                        <img src="../assets/images/vision-3.jpg" alt="Comunidad" style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div class="objetivo-content">
+                        <h3 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">
+                            Comunidad Colaborativa
+                        </h3>
+                        <p style="color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8;">
+                            Fomentamos un ambiente donde estudiantes y mentores se apoyan mutuamente, creando una red de conocimiento compartido que trasciende el aula tradicional.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Objetivo 4 -->
+                <div class="objetivo-item" data-aos="fade-up" data-aos-delay="100" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+                    <div class="objetivo-content" style="order: 1;">
+                        <h3 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">
+                            Innovación Educativa
+                        </h3>
+                        <p style="color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8;">
+                            Implementamos metodologías modernas y tecnologías innovadoras para hacer el aprendizaje más efectivo, dinámico y adaptado a las necesidades del siglo XXI.
+                        </p>
+                    </div>
+                    <div class="objetivo-image" style="position: relative; overflow: hidden; border-radius: 24px; order: 2;">
+                        <img src="../assets/images/vision-4.jpg" alt="Innovación" style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                </div>
+
+                <!-- Objetivo 5 -->
+                <div class="objetivo-item" data-aos="fade-up" data-aos-delay="200" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div class="objetivo-image" style="position: relative; overflow: hidden; border-radius: 24px;">
+                        <img src="../assets/images/vision-5.jpg" alt="Impacto Social" style="width: 100%; height: 400px; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div class="objetivo-content">
+                        <h3 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">
+                            Impacto Social Medible
+                        </h3>
+                        <p style="color: var(--color-text-secondary); font-size: 1.1rem; line-height: 1.8;">
+                            Medimos nuestro éxito por las vidas que transformamos. Cada estudiante que alcanza sus metas es una victoria para toda nuestra comunidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUESTROS VALORES -->
+    <section class="valores" style="padding: 6rem 0; background: var(--gradient-primary);">
+        <div class="container">
+            <h2 class="section-title centered" data-aos="fade-up">Nuestros Valores</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="valor-card" data-aos="zoom-in" data-aos-delay="100" style="background: white; padding: 2rem; border-radius: 16px; text-align: center; box-shadow: var(--shadow-md); transition: transform 0.3s ease;">
+                    <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Empatía</h3>
+                    <p style="color: var(--color-text-secondary); line-height: 1.6;">Entendemos las necesidades de cada estudiante y nos comprometemos con su éxito personal.</p>
+                </div>
+
+                <div class="valor-card" data-aos="zoom-in" data-aos-delay="200" style="background: white; padding: 2rem; border-radius: 16px; text-align: center; box-shadow: var(--shadow-md); transition: transform 0.3s ease;">
+                    <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Compromiso</h3>
+                    <p style="color: var(--color-text-secondary); line-height: 1.6;">Dedicamos tiempo y esfuerzo real para asegurar que cada estudiante alcance su máximo potencial.</p>
+                </div>
+
+                <div class="valor-card" data-aos="zoom-in" data-aos-delay="300" style="background: white; padding: 2rem; border-radius: 16px; text-align: center; box-shadow: var(--shadow-md); transition: transform 0.3s ease;">
+                    <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Excelencia</h3>
+                    <p style="color: var(--color-text-secondary); line-height: 1.6;">Buscamos la más alta calidad en todo lo que hacemos, desde la enseñanza hasta el acompañamiento.</p>
+                </div>
+
+                <div class="valor-card" data-aos="zoom-in" data-aos-delay="400" style="background: white; padding: 2rem; border-radius: 16px; text-align: center; box-shadow: var(--shadow-md); transition: transform 0.3s ease;">
+                    <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--gradient-card); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-verde-esmeralda);">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-azul-profundo); margin-bottom: 1rem;">Transparencia</h3>
+                    <p style="color: var(--color-text-secondary); line-height: 1.6;">Operamos con honestidad total, mostrando resultados reales y manteniendo comunicación abierta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Young Devs Logo">
+                        <span>Young Devs</span>
+                    </div>
+                    <p class="footer-description">Talento joven impulsando el futuro. Educación gratuita de calidad para todos.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="mision.html">Nuestra Misión</a></li>
+                        <li><a href="ayuda-general.html">Te Ayudamos</a></li>
+                        <li><a href="sumarse.html">Sumarse</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Áreas de Apoyo</h4>
+                    <ul class="footer-links">
+                        <li><a href="ayuda-matematicas.html">Matemáticas</a></li>
+                        <li><a href="ayuda-robotica.html">Robótica</a></li>
+                        <li><a href="ayuda-ingles.html">Inglés</a></li>
+                        <li><a href="ayuda-programacion.html">Programación</a></li>
+                        <li><a href="ayuda-negocios.html">Para Negocios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <li><a href="aliados.html">Nuestros Aliados</a></li>
+                        <li><a href="mailto:young.devs@gmail.com">young.devs@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Young Devs. Todos los derechos reservados.</p>
+                <p>Potencia tu futuro y ayuda a impulsar el futuro de la juventud</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+
+    <style>
+        .objetivo-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .valor-card:hover {
+            transform: translateY(-10px);
+        }
+
+        @media (max-width: 968px) {
+            .objetivo-item {
+                grid-template-columns: 1fr !important;
+            }
+            
+            .objetivo-content {
+                order: 2 !important;
+            }
+            
+            .objetivo-image {
+                order: 1 !important;
+            }
+        }
+    </style>
+</body>
+</html>
