@@ -26,8 +26,8 @@ function initCounterAnimation() {
     const counters = document.querySelectorAll('.stat-number, .card-number');
     
     const observerOptions = {
-        threshold: 0.5,
-        rootMargin: '0px'
+        threshold: 0.05,
+        rootMargin: '10px'
     };
     
     const counterObserver = new IntersectionObserver((entries) => {
@@ -116,7 +116,7 @@ function initParallaxEffect() {
         const scrolled = window.pageYOffset;
         
         parallaxElements.forEach(element => {
-            const speed = element.dataset.speed || 0.5;
+            const speed = element.dataset.speed || 0.05;
             const yPos = -(scrolled * speed);
             element.style.transform = `translateY(${yPos}px)`;
         });
@@ -135,7 +135,7 @@ function initFadeInElements() {
         });
     }, {
         threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        rootMargin: '0px 0px 0px 0px'
     });
     
     fadeElements.forEach(element => {

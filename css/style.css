@@ -645,6 +645,8 @@ body.dark-mode .sun-icon {
     height: 100%;
     transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
     transform-style: preserve-3d;
+    border-radius: var(--radius-lg);  /* ← Redondear contenedor */
+
 }
 
 /* Al hacer hover - gira suavemente */
@@ -664,6 +666,8 @@ body.dark-mode .sun-icon {
     box-shadow: var(--shadow-md);
     top: 0;
     left: 0;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
 }
 
 /* === FRENTE DE LA TARJETA === */
@@ -678,7 +682,7 @@ body.dark-mode .sun-icon {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-lg);  /* ← Redondear imagen */
     transition: transform 0.6s ease;
 }
 
@@ -705,6 +709,8 @@ body.dark-mode .sun-icon {
     padding: var(--spacing-md);
     opacity: 1;  /* ← CAMBIO: Siempre visible (era 0) */
     transition: opacity 0.4s ease;
+    border-radius: var(--radius-lg);  /* ← Redondear overlay */
+
 }
 
 /* Al hacer hover - se mantiene visible (opcional: puede hacerse más opaco) */

@@ -4,7 +4,7 @@ body.dark-mode {
     --color-bg-secondary: #1E293B;
     --color-text-primary: #F1F5F9;
     --color-text-secondary: #CBD5E1;
-    --color-text-terctiary: #1E293B;
+    --color-text-tertiary: #1E293B;
 
     /* Gradientes oscuros */
     --gradient-primary: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
