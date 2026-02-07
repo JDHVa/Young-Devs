@@ -1,15 +1,11 @@
-/* ============================================
-   YOUNG DEVS - DARK MODE
-   ============================================ */
-
-/* === VARIABLES DARK MODE === */
 body.dark-mode {
-    /* CORRECCIÓN: Colores con mejor contraste */
+    /* Colores con mejor contraste */
     --color-bg-primary: #0F172A;
     --color-bg-secondary: #1E293B;
-    --color-text-primary: #F1F5F9;  /* ← CORREGIDO: era #1E293B (muy oscuro) */
-    --color-text-secondary: #CBD5E1;  /* ← CORREGIDO: era white (muy brillante) */
-    
+    --color-text-primary: #F1F5F9;
+    --color-text-secondary: #CBD5E1;
+    --color-text-terctiary: #1E293B;
+
     /* Gradientes oscuros */
     --gradient-primary: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
     --gradient-hero: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(26, 188, 156, 0.7) 100%);
@@ -119,26 +115,16 @@ body.dark-mode .impacto-message p {
     color: var(--color-text-secondary);
 }
 
-/* === TESTIMONIOS DARK MODE === */
+/* ===================================
+   TESTIMONIOS DARK MODE
+   (Las reglas de flip están en testimonials CSS)
+   =================================== */
 body.dark-mode .testimonios {
     background: var(--color-bg-primary);
 }
 
 body.dark-mode .section-subtitle {
     color: var(--color-text-secondary);
-}
-
-body.dark-mode .card-back {
-    background: #1E293B;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-body.dark-mode .testimonial-text {
-    color: var(--color-text-secondary);
-}
-
-body.dark-mode .testimonial-author {
-    color: var(--color-text-primary);
 }
 
 body.dark-mode .cta-button-secondary {
@@ -157,7 +143,9 @@ body.dark-mode .unete {
     background: linear-gradient(135deg, #0F172A, #1E293B);
 }
 
-/* === CONTACTO SECTION DARK MODE === */
+/* ===================================
+   CONTACTO & FORMULARIOS - MÁS CLAROS
+   =================================== */
 body.dark-mode .contacto {
     background: var(--color-bg-secondary);
 }
@@ -187,31 +175,45 @@ body.dark-mode .contacto-form {
     background: #0F172A;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 body.dark-mode .form-group label {
-    color: black;  /* Texto claro */
+    color: black;
 }
 body.dark-mode .formm-group label {
-    color: var(--color-text-primary);  /* Texto claro */
+    color: white;
 }
+/* ✅ INPUTS MÁS CLAROS */
 body.dark-mode .form-group input,
 body.dark-mode .form-group textarea {
-    background: #475569;  /* ← MUCHO MÁS CLARO que #1E293B */
-    border: 2px solid #64748B;  /* ← Borde más visible */
-    color: #F8FAFC;  /* ← Texto muy claro */
+    background: #475569;
+    border: 2px solid #64748B;
+    color: #F8FAFC;
 }
 
 body.dark-mode .form-group input::placeholder,
 body.dark-mode .form-group textarea::placeholder {
-    color: #CBD5E1;  /* ← Mucho más visible que antes */
+    color: #CBD5E1;
     opacity: 0.7;
 }
 
 body.dark-mode .form-group input:focus,
 body.dark-mode .form-group textarea:focus {
-    background: #64748B;  /* ← Se aclara más al escribir */
+    background: #64748B;
     border-color: var(--color-verde-esmeralda);
-    color: #FFFFFF;  /* ← Blanco puro al escribir */
+    color: #FFFFFF;
     box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.25);
+}
+
+/* Autocomplete */
+body.dark-mode input:-webkit-autofill,
+body.dark-mode input:-webkit-autofill:hover,
+body.dark-mode input:-webkit-autofill:focus,
+body.dark-mode textarea:-webkit-autofill,
+body.dark-mode textarea:-webkit-autofill:hover,
+body.dark-mode textarea:-webkit-autofill:focus {
+    -webkit-text-fill-color: #F8FAFC !important;
+    -webkit-box-shadow: 0 0 0px 1000px #475569 inset !important;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 /* === FOOTER DARK MODE === */
@@ -289,22 +291,28 @@ body.dark-mode .form-status.error {
     border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
-/* === SMOOTH TRANSITIONS === */
-body.dark-mode,
-body.dark-mode * {
-    transition: background-color 0.3s ease, 
-                border-color 0.3s ease, 
-                color 0.3s ease;
+/* ===================================
+   TRANSICIONES - EXCLUIR FLIP
+   NO aplicar transiciones globales a tarjetas
+   =================================== */
+body.dark-mode {
+    transition: background-color 0.3s ease;
 }
 
-/* Evitar transición en elementos que ya tienen su propia transición */
-body.dark-mode .testimonial-card,
-body.dark-mode .card-front,
-body.dark-mode .card-back,
-body.dark-mode a,
-body.dark-mode button {
+/* Solo elementos específicos, NO las tarjetas de testimonios */
+body.dark-mode .navbar,
+body.dark-mode .nav-link,
+body.dark-mode .footer,
+body.dark-mode .contact-item,
+body.dark-mode .impacto-card,
+body.dark-mode .stat-item,
+body.dark-mode button:not(.testimonial-card *),
+body.dark-mode a:not(.testimonial-card *) {
     transition: all 0.3s ease;
 }
+
+/* ❌ ELIMINADO: La regla global que rompía el flip */
+/* body.dark-mode * { transition: ... } */
 
 /* === SPECIAL DARK MODE EFFECTS === */
 body.dark-mode .impacto-card.featured {
@@ -395,33 +403,17 @@ body.dark-mode .card-number {
 }
 
 /* === SPECIAL HOVER STATES === */
-body.dark-mode .testimonial-card:hover {
-    box-shadow: 0 12px 40px rgba(46, 204, 113, 0.2);
-}
-
 body.dark-mode .stat-item:hover {
     background: linear-gradient(135deg, rgba(46, 204, 113, 0.25) 0%, rgba(26, 188, 156, 0.25) 100%);
     border-color: var(--color-verde-esmeralda);
-}
-
-/* === QUOTE ICON DARK MODE === */
-body.dark-mode .quote-icon {
-    color: var(--color-verde-esmeralda);
-    opacity: 0.6;
 }
 
 /* === ENHANCED CARD BORDERS === */
 body.dark-mode .impacto-card,
 body.dark-mode .contact-item,
 body.dark-mode .stat-item,
-body.dark-mode .contacto-form,
-body.dark-mode .card-back {
+body.dark-mode .contacto-form {
     border: 1px solid rgba(46, 204, 113, 0.1);
-}
-
-/* === GRADIENT OVERLAYS === */
-body.dark-mode .card-overlay {
-    background: linear-gradient(to top, rgba(15, 23, 42, 0.95), transparent);
 }
 
 /* === RESPONSIVE DARK MODE === */
@@ -476,16 +468,4 @@ body.dark-mode .video-background::before {
     bottom: 0;
     background: rgba(15, 23, 42, 0.3);
     z-index: 1;
-}
-
-
-body.dark-mode input:-webkit-autofill,
-body.dark-mode input:-webkit-autofill:hover,
-body.dark-mode input:-webkit-autofill:focus,
-body.dark-mode textarea:-webkit-autofill,
-body.dark-mode textarea:-webkit-autofill:hover,
-body.dark-mode textarea:-webkit-autofill:focus {
-    -webkit-text-fill-color: #F8FAFC !important;
-    -webkit-box-shadow: 0 0 0px 1000px #475569 inset !important;
-    transition: background-color 5000s ease-in-out 0s;
 }

@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Inicializar animaciones personalizadas
     initCounterAnimation();
-    initTestimonialFlip();
+    initTestimonialMobileFlip();  // ← Solo para móviles
     initParallaxEffect();
 });
 
@@ -81,6 +81,30 @@ function animateCounter(element) {
     }, stepDuration);
 }
 
+/* === FLIP DE TARJETAS EN MÓVILES (SOLO TÁCTIL) === */
+function initTestimonialMobileFlip() {
+    // Solo activar en dispositivos táctiles
+    if (!('ontouchstart' in window)) return;
+    
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    testimonialCards.forEach(card => {
+        let isFlipped = false;
+        
+        card.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Toggle clase flipped
+            if (!isFlipped) {
+                this.classList.add('flipped');
+                isFlipped = true;
+            } else {
+                this.classList.remove('flipped');
+                isFlipped = false;
+            }
+        });
+    });
+}
 
 /* === EFECTO PARALLAX SUAVE === */
 function initParallaxEffect() {
