@@ -901,7 +901,39 @@ body.dark-mode .sun-icon {
     resize: vertical;
     min-height: 120px;
 }
+.formm-group {
+    margin-bottom: var(--spacing-md);
+}
 
+.formm-group label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+    color: var(--color-azul-profundo);
+}
+
+.formm-group input,
+.formm-group textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 2px solid #E5E7EB;
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition-fast);
+}
+
+.formm-group input:focus,
+.formm-group textarea:focus {
+    outline: none;
+    border-color: var(--color-verde-esmeralda);
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
+}
+
+.formm-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
 .submit-button {
     width: 100%;
     display: flex;
