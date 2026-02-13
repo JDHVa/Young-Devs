@@ -334,7 +334,6 @@ body.dark-mode .sun-icon {
 }
 
 .hero-subtitle {
-    font-size: clamp(1.2rem, 3vw, 2rem);
     font-weight: 300;
     color: var(--color-blanco);
     margin-bottom: var(--spacing-lg);
