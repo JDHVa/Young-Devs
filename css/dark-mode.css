@@ -112,7 +112,7 @@ body.dark-mode .impacto-message {
 }
 
 body.dark-mode .impacto-message p {
-    color: var(--color-text-secondary);
+    color: black;
 }
 
 /* ===================================
