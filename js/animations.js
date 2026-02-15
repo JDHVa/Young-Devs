@@ -116,7 +116,7 @@ function initParallaxEffect() {
         const scrolled = window.pageYOffset;
         
         parallaxElements.forEach(element => {
-            const speed = element.dataset.speed || 0.05;
+            const speed = element.dataset.speed || 0.008;
             const yPos = -(scrolled * speed);
             element.style.transform = `translateY(${yPos}px)`;
         });
