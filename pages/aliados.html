@@ -72,17 +72,14 @@
 
     <!-- HERO -->
     <section class="hero-area" style="height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #1B365D 0%, #1ABC9C 100%); overflow: hidden;">
-            <!-- Partículas decorativas -->
-            <div style="position: absolute; width: 100%; height: 100%; opacity: 0.08;">
-                <div style="position: absolute; top: 15%; left: 10%; width: 200px; height: 200px; border: 3px solid white; border-radius: 50%; animation: floatCircle 8s ease-in-out infinite;"></div>
-                <div style="position: absolute; top: 55%; right: 8%; width: 140px; height: 140px; border: 3px solid white; border-radius: 50%; animation: floatCircle 10s ease-in-out infinite;"></div>
-                <div style="position: absolute; bottom: 15%; left: 30%; width: 100px; height: 100px; border: 3px solid white; border-radius: 50%; animation: floatCircle 7s ease-in-out infinite;"></div>
-                <div style="position: absolute; top: 30%; right: 30%; width: 160px; height: 160px; border: 3px solid white; border-radius: 50%; animation: floatCircle 9s ease-in-out infinite;"></div>
-                <div style="position: absolute; bottom: 30%; right: 25%; width: 80px; height: 80px; border: 3px solid white; border-radius: 50%; animation: floatCircle 6s ease-in-out infinite;"></div>
-            </div>
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="../assets/videos/young-devs-aliados.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="video-overlay"></div>
         </div>
-        
+
         <div class="hero-content" style="position: relative; z-index: 2; text-align: center; max-width: 900px; padding: 0 2rem;">
             <div style="width: 120px; height: 120px; background: rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; backdrop-filter: blur(10px);" data-aos="zoom-in">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -112,35 +109,344 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 1rem;">
                 <div data-aos="fade-up" data-aos-delay="100" style="text-align: center; background: white; padding: 2.5rem 1.5rem; border-radius: 20px; box-shadow: var(--shadow-md);">
-                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="12">0</div>
+                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="12">4</div>
                     <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-top: 0.5rem;">Aliados Activos</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="200" style="text-align: center; background: white; padding: 2.5rem 1.5rem; border-radius: 20px; box-shadow: var(--shadow-md);">
-                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="500">0</div>
+                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="500">15</div>
                     <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-top: 0.5rem;">Estudiantes Apoyados</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="300" style="text-align: center; background: white; padding: 2.5rem 1.5rem; border-radius: 20px; box-shadow: var(--shadow-md);">
-                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="50">0</div>
+                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="50">3</div>
                     <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-top: 0.5rem;">Proyectos Exitosos</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="400" style="text-align: center; background: white; padding: 2.5rem 1.5rem; border-radius: 20px; box-shadow: var(--shadow-md);">
-                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="5">0</div>
-                    <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-top: 0.5rem;">Áreas Cubiertas</p>
+                    <div style="font-size: 2.8rem; font-weight: 800; font-family: var(--font-display); color: var(--color-verde-esmeralda);" class="counter" data-target="5">4</div>
+                    <p style="color: var(--color-text-secondary); font-size: 1.05rem; margin-top: 0.5rem;">Municipios de Nuevo León Cubiertos</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ALIADOS PRINCIPALES -->
     <section style="padding: 6rem 0; background: var(--gradient-primary);">
         <div class="container">
-            <h2 class="section-title centered" data-aos="fade-up">Empresas e Instituciones</h2>
+            <h2 class="section-title centered" data-aos="fade-up">Colaboradores o Proyectos</h2>
             <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-                Estas organizaciones creen en nuestra misión y nos apoyan activamente
+                Estas personas y proyectos creen en nuestra misión y nos apoyan activamente
             </p>
-            
-            <!-- Grid de logos placeholder -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 4rem;">
+            <h2 class="section-title left" data-aos="fade-up">Colaboradores que nos apoyan constantemente</h2>
+
+            <div class="testimonios-grid">
+                <div class="testimonial-card-aliados" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-inner">  
+                        
+                        <!-- FRENTE: Imagen + Info de lo que hicimos -->
+                        <div class="card-front">
+                            <img src="../assets/images/young-devs-aliados-jesus.png" alt="Testimonio 1">
+                            <div class="card-front-overlay">
+                                <div class="card-front-content">
+                                    <h3 class="help-title">Jesús Daniel</h3>
+                                    <p class="help-description">Fundador de Young Devs</p>
+                                    <div class="flip-hint">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4v16m8-8H4"/>
+                                        </svg>
+                                        <span>Ver testimonio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-back">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text" style="font-size: 0.85em;">Funde Young Devs, ya que en la preparatoria en periodo de Examenes, a unos cuantos amigos les daba clases de matematicas completamente gratuito, por lo que me di cuenta que en la actualidad no exixte ningun sitio que de mentorias gratuitas en persona, por lo que funde Young Devs, con la vision de dar clases de calidad gratuitas. <br>Actualmente, soy estudiante de la Escuela Industrial y Preparatoria Tecnica Alvaro Obregon, Tecnico en Inteligencia Artificial, y estoy cursando el 4 semestre de mi carrera tecnica.</p>
+                            <p class="testimonial-author">Jesús Daniel</p>
+                            <p class="testimonial-role">Estudiante de IA en la EIAO</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="testimonial-card-aliados" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-inner">
+                        
+                        <div class="card-front">
+                            <img src="../assets/images/young-devs-aliados-william.png" alt="Testimonio 2">
+                            <div class="card-front-overlay">
+                                <div class="card-front-content">
+                                    <h3 class="help-title">William Gomez</h3>
+                                    <p class="help-description">Cofundador de Young Devs</p>
+                                    <div class="flip-hint">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4v16m8-8H4"/>
+                                        </svg>
+                                        <span>Ver testimonio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-back">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">Conoci a Jesús (Mentor de Young Devs)  por un trabajo en común, y me ayudó muchisimo a enteder MFE, tambien a mi amiga Alisson, entendimos mucho mejor que con nuestro actual profe de MFE.</p>
+                            <p class="testimonial-author">Paulette y Alisson</p>
+                            <p class="testimonial-role">Estudiante de la EIAO</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="testimonial-card-aliados" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-inner">
+                        
+                        <div class="card-front">
+                            <img src="../assets/images/young-devs-aliados-emilio.png" alt="Testimonio 3">
+                            <div class="card-front-overlay">
+                                <div class="card-front-content">
+                                    <h3 class="help-title">Emilio</h3>
+                                    <p class="help-description">Colaborador de Young Devs</p>
+                                    <div class="flip-hint">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4v16m8-8H4"/>
+                                        </svg>
+                                        <span>Ver testimonio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-back">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">Gracias a Young Devs, pudimos tener nuestra propia pagina web y poder llegar a una nueva realidad, muchas gracias Young Devs por la ayuda.</p>
+                            <p class="testimonial-author">Tacos Hobita Av. Los Mezquites</p>
+                            <p class="testimonial-role">Dueño de Tacos Hobita</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="testimonial-card-aliados" data-aos="fade-up" data-aos-delay="300" style="border-radius: 100%;">
+                    <div class="card-inner">
+                        
+                        <div class="card-front">
+                            <img src="../assets/images/young-devs-aliados-jack.png" alt="Testimonio 4">
+                            <div class="card-front-overlay">
+                                <div class="card-front-content">
+                                    <h3 class="help-title">Jack</h3>
+                                    <p class="help-description">Colaborador de Young Devs</p>
+                                    <div class="flip-hint">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4v16m8-8H4"/>
+                                        </svg>
+                                        <span>Ver testimonio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-back">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">Julio (Mentor de Young Devs) me ayudó mucho con los temas de inglés Progresivo IV, ya que no entendía muy bien los temas, pero con su ayuda pude entenderlos mejor.</p>
+                            <p class="testimonial-author">Enrique</p>
+                            <p class="testimonial-role">Estudiante de la EIAO</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- EJEMPLO CON PLACEHOLDERS (si no tienes imágenes) -->
+                <div class="testimonial-card-aliados" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-inner">
+                        
+                        <div class="card-front">
+                            <!-- Puedes usar un placeholder gradient si no tienes imagen -->
+                            <div class="card-front-gradient"></div>
+                            <div class="card-front-overlay">
+                                <div class="card-front-content">
+                                    <h3 class="help-title">Inteligencia Artificial</h3>
+                                    <p class="help-description">Entrenó su primer modelo de ML</p>
+                                    <div class="flip-hint">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4v16m8-8H4"/>
+                                        </svg>
+                                        <span>Ver testimonio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-back">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">El mundo de la IA parecía inalcanzable, pero ahora entiendo los conceptos y puedo aplicarlos en proyectos reales.</p>
+                            <p class="testimonial-author">Sofia Ramírez</p>
+                            <p class="testimonial-role">Estudiante de IA</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                            
+            </div>
+            <h2 class="section-title left" data-aos="fade-up">Proyectos aliados con la misma vision</h2>
+            <div class="testimonios-grid">
+                <div class="testimonial-card-aliados" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-inner">  
+                        
+                        <!-- FRENTE: Imagen + Info de lo que hicimos -->
+                        <div class="card-front">
+                            <img src="../assets/images/young-devs-aliados-quizbot.png" alt="Testimonio 1">
+                            <div class="card-front-overlay">
+                                <div class="card-front-content">
+                                    <h3 class="help-title">QuizBot</h3>
+                                    <p class="help-description">Proyecto de Tigres 6652</p>
+                                    <div class="flip-hint">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4v16m8-8H4"/>
+                                        </svg>
+                                        <span>Ver Descripciom</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-back">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text" style="font-size: 0.85em;">Funde Young Devs, ya que en la preparatoria en periodo de Examenes, a unos cuantos amigos les daba clases de matematicas completamente gratuito, por lo que me di cuenta que en la actualidad no exixte ningun sitio que de mentorias gratuitas en persona, por lo que funde Young Devs, con la vision de dar clases de calidad gratuitas. <br>Actualmente, soy estudiante de la Escuela Industrial y Preparatoria Tecnica Alvaro Obregon, Tecnico en Inteligencia Artificial, y estoy cursando el 4 semestre de mi carrera tecnica.</p>
+                            <p class="testimonial-author">Jesús Daniel</p>
+                            <p class="testimonial-role">Estudiante de IA en la EIAO</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="testimonial-card-aliados" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-inner">
+                        
+                        <div class="card-front">
+                            <img src="../assets/images/young-devs-aliados-ayudamos_ya.png" alt="Testimonio 2">
+                            <div class="card-front-overlay">
+                                <div class="card-front-content">
+                                    <h3 class="help-title">Ayudemos Ya! </h3>
+                                    <p class="help-description">Proyecto Aliado</p>
+                                    <div class="flip-hint">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4v16m8-8H4"/>
+                                        </svg>
+                                        <span>Ver testimonio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-back">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">Conoci a Jesús (Mentor de Young Devs)  por un trabajo en común, y me ayudó muchisimo a enteder MFE, tambien a mi amiga Alisson, entendimos mucho mejor que con nuestro actual profe de MFE.</p>
+                            <p class="testimonial-author">Paulette y Alisson</p>
+                            <p class="testimonial-role">Estudiante de la EIAO</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="testimonial-card-aliados" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-inner">
+                        
+                        <div class="card-front">
+                            <img src="../assets/images/young-devs-aliados-emilio.png" alt="Testimonio 3">
+                            <div class="card-front-overlay">
+                                <div class="card-front-content">
+                                    <h3 class="help-title">Emilio</h3>
+                                    <p class="help-description">Colaborador de Young Devs</p>
+                                    <div class="flip-hint">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4v16m8-8H4"/>
+                                        </svg>
+                                        <span>Ver testimonio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-back">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">Gracias a Young Devs, pudimos tener nuestra propia pagina web y poder llegar a una nueva realidad, muchas gracias Young Devs por la ayuda.</p>
+                            <p class="testimonial-author">Tacos Hobita Av. Los Mezquites</p>
+                            <p class="testimonial-role">Dueño de Tacos Hobita</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="testimonial-card-aliados" data-aos="fade-up" data-aos-delay="300" style="border-radius: 100%;">
+                    <div class="card-inner">
+                        
+                        <div class="card-front">
+                            <img src="../assets/images/young-devs-aliados-jack.png" alt="Testimonio 4">
+                            <div class="card-front-overlay">
+                                <div class="card-front-content">
+                                    <h3 class="help-title">Jack</h3>
+                                    <p class="help-description">Colaborador de Young Devs</p>
+                                    <div class="flip-hint">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4v16m8-8H4"/>
+                                        </svg>
+                                        <span>Ver testimonio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-back">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">Julio (Mentor de Young Devs) me ayudó mucho con los temas de inglés Progresivo IV, ya que no entendía muy bien los temas, pero con su ayuda pude entenderlos mejor.</p>
+                            <p class="testimonial-author">Enrique</p>
+                            <p class="testimonial-role">Estudiante de la EIAO</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- EJEMPLO CON PLACEHOLDERS (si no tienes imágenes) -->
+                <div class="testimonial-card-aliados" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-inner">
+                        
+                        <div class="card-front">
+                            <!-- Puedes usar un placeholder gradient si no tienes imagen -->
+                            <div class="card-front-gradient"></div>
+                            <div class="card-front-overlay">
+                                <div class="card-front-content">
+                                    <h3 class="help-title">Inteligencia Artificial</h3>
+                                    <p class="help-description">Entrenó su primer modelo de ML</p>
+                                    <div class="flip-hint">
+                                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 4v16m8-8H4"/>
+                                        </svg>
+                                        <span>Ver testimonio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-back">
+                            <div class="quote-icon">"</div>
+                            <p class="testimonial-text">El mundo de la IA parecía inalcanzable, pero ahora entiendo los conceptos y puedo aplicarlos en proyectos reales.</p>
+                            <p class="testimonial-author">Sofia Ramírez</p>
+                            <p class="testimonial-role">Estudiante de IA</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                            
+            </div>
+
+
+    </section>
+            <!--<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 4rem;">
                 <div data-aos="zoom-in" data-aos-delay="100" style="background: white; border-radius: 20px; padding: 2.5rem; text-align: center; box-shadow: var(--shadow-md); transition: transform 0.3s ease; min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                     <div style="width: 90px; height: 90px; background: var(--gradient-card); border-radius: 18px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem;">
                         <img src="../assets/images/partners/partner1.png" alt="Aliado 1" style="max-width: 70px; max-height: 70px; object-fit: contain;">
@@ -190,9 +496,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- CÓMO APOYAN -->
     <section style="padding: 6rem 0; background: var(--color-bg-primary);">
         <div class="container">
             <h2 class="section-title centered" data-aos="fade-up">¿Cómo Nos Apoyan?</h2>

@@ -639,7 +639,38 @@ body.dark-mode .sun-icon {
     perspective: 1000px;
     cursor: pointer;
 }
+/* Testimonio Aliados */
+.testimonial-card-aliados {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    perspective: 1000px;
+    cursor: pointer;
+}
 
+/* Al hacer hover - gira suavemente */
+.testimonial-card-aliados:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+
+
+/* Zoom suave en la imagen al hacer hover */
+.testimonial-card-aliados:hover .card-front img {
+    transform: scale(1.05);
+}
+
+
+/* Al hacer hover - se mantiene visible (opcional: puede hacerse más opaco) */
+.testimonial-card-aliados:hover .card-front-overlay {
+    opacity: 1;
+    background: linear-gradient(
+        to top,
+        rgba(27, 54, 93, 0.98) 0%,
+        rgba(27, 54, 93, 0.8) 50%,
+        transparent 100%
+    );
+}
 /* Wrapper interno que realmente gira - SMOOTH */
 .card-inner {
     position: relative;
