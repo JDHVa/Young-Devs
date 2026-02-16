@@ -1411,6 +1411,28 @@ body.dark-mode .flip-hint {
     color: var(--color-verde-esmeralda);
     transition: var(--transition-fast);
 }
+.seamos-honestos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .seamos-honestos-grid {
+        grid-template-columns: 1fr;  /* ← Una sola columna */
+        gap: 2rem;
+        padding: 2rem !important;    /* ← Menos padding en móvil */
+    }
+}
+
+/* Móvil pequeño */
+@media (max-width: 480px) {
+    .seamos-honestos-grid {
+        padding: 1.5rem !important;
+        gap: 1.5rem;
+    }
+}
 
 html, body {
     overflow-x: hidden;
