@@ -653,8 +653,6 @@ body.dark-mode .sun-icon {
     transform: rotateY(180deg);
 }
 
-
-
 /* Zoom suave en la imagen al hacer hover */
 .testimonial-card-aliados:hover .card-front img {
     transform: scale(1.05);
